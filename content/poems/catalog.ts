@@ -7,6 +7,17 @@ const audioVoices = audioVoiceEdition.voices as Record<
   { voice: string; reason: string }
 >;
 
+export const narrationPreviewSlugs = [
+  "frontier-song",
+  "liangzhou-song",
+  "spring-morning",
+  "mount-lu-waterfall",
+  "quiet-night-thought",
+  "the-reeds",
+] as const;
+
+const narrationPreviewSet = new Set<string>(narrationPreviewSlugs);
+
 const definePoem = (
   poem: Omit<Poem, "translator" | "license">,
 ): Poem => ({
@@ -1016,9 +1027,13 @@ const curatedPoems: Poem[] = [
 ];
 
 export const poems: Poem[] = [...curatedPoems, ...tangAnthologyPoems].map(
-  (poem) => ({
-    ...poem,
-    audio: `/audio/zh/${poem.slug}.mp3`,
-    audioVoice: audioVoices[poem.slug]?.voice,
-  }),
+  (poem) => {
+    if (!narrationPreviewSet.has(poem.slug)) return poem;
+
+    return {
+      ...poem,
+      audio: `/audio/zh/${poem.slug}.mp3`,
+      audioVoice: audioVoices[poem.slug]?.voice,
+    };
+  },
 );

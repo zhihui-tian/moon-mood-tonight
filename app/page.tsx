@@ -3,8 +3,9 @@ import Link from "next/link";
 import { MoodGrid } from "../components/MoodGrid";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
+import { VoicePreviewGallery } from "../components/VoicePreviewGallery";
 import { moods } from "../lib/moods";
-import { poems } from "../lib/poems";
+import { narrationPreviewSlugs, poems } from "../lib/poems";
 
 export const metadata: Metadata = {
   title: "Classical Chinese poetry for the way you feel tonight",
@@ -22,6 +23,23 @@ export default function Home() {
   const featured = featuredSlugs
     .map((slug) => poems.find((poem) => poem.slug === slug))
     .filter((poem) => poem !== undefined);
+  const voicePreviews = narrationPreviewSlugs
+    .map((slug) => poems.find((poem) => poem.slug === slug))
+    .filter(
+      (poem): poem is (typeof poems)[number] & {
+        audio: string;
+        audioVoice: string;
+      } => Boolean(poem?.audio && poem.audioVoice),
+    )
+    .map((poem) => ({
+      audio: poem.audio,
+      firstLine: poem.originalChinese[0]?.[0] ?? poem.originalTitle,
+      originalTitle: poem.originalTitle,
+      poetChinese: poem.poetChinese,
+      slug: poem.slug,
+      title: poem.title,
+      voice: poem.audioVoice,
+    }));
 
   return (
     <>
@@ -86,6 +104,20 @@ export default function Home() {
               How this collection is made <span aria-hidden="true">→</span>
             </Link>
           </div>
+        </section>
+
+        <section className="voice-preview-section" id="listen">
+          <header className="section-heading">
+            <div>
+              <p className="section-label">先听六首 · Neural voice preview</p>
+              <h2>让声音跟着诗走。</h2>
+            </div>
+            <p>
+              边塞诗用浑厚苍劲的声音，春景用清亮灵动的声音，思乡与怀人则更温柔克制。
+              先试听这六首，再决定其余诗的声音。
+            </p>
+          </header>
+          <VoicePreviewGallery previews={voicePreviews} />
         </section>
 
         <section className="featured-section">

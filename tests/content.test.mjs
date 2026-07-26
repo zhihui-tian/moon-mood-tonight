@@ -85,11 +85,13 @@ test("includes every reused ink-wash landscape", async () => {
   );
 });
 
-test("ships one content-directed neural Mandarin narration for every poem", async () => {
-  const [manifestSource, voiceEditionSource, player, catalog] = await Promise.all([
+test("ships six visible neural narration previews backed by the complete audio edition", async () => {
+  const [manifestSource, voiceEditionSource, player, gallery, home, catalog] = await Promise.all([
     readFile(new URL("public/audio/zh/manifest.json", root), "utf8"),
     readFile(new URL("content/poems/audio-voices.json", root), "utf8"),
     readFile(new URL("components/PoemNarration.tsx", root), "utf8"),
+    readFile(new URL("components/VoicePreviewGallery.tsx", root), "utf8"),
+    readFile(new URL("app/page.tsx", root), "utf8"),
     readFile(new URL("content/poems/catalog.ts", root), "utf8"),
   ]);
   const manifest = JSON.parse(manifestSource);
@@ -111,12 +113,25 @@ test("ships one content-directed neural Mandarin narration for every poem", asyn
   assert.equal(Object.keys(voiceEdition.voices).length, 300);
   assert.ok(manifest.totalDurationSeconds > 8_000);
   assert.ok(manifest.totalBytes > 120_000_000);
+  for (const slug of [
+    "frontier-song",
+    "liangzhou-song",
+    "spring-morning",
+    "mount-lu-waterfall",
+    "quiet-night-thought",
+    "the-reeds",
+  ]) {
+    assert.match(catalog, new RegExp(`"${slug}"`));
+  }
+  assert.match(catalog, /narrationPreviewSet\.has\(poem\.slug\)/);
   assert.match(catalog, /audio: `\/audio\/zh\/\$\{poem\.slug\}\.mp3`/);
   assert.match(catalog, /audioVoice: audioVoices\[poem\.slug\]\?\.voice/);
   assert.match(player, /<audio/);
   assert.match(player, /const playbackRates = \[0\.8, 1, 1\.2\]/);
   assert.match(player, /onActiveLineChange/);
   assert.match(player, /voice\.replaceAll/);
+  assert.match(gallery, /先听六首|试听/);
+  assert.match(home, /<VoicePreviewGallery/);
 
   await Promise.all(
     manifest.poems.map(async (poem) => {
