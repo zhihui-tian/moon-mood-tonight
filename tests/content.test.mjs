@@ -85,26 +85,38 @@ test("includes every reused ink-wash landscape", async () => {
   );
 });
 
-test("ships one fixed Mandarin narration for every poem", async () => {
-  const [manifestSource, player, catalog] = await Promise.all([
+test("ships one content-directed neural Mandarin narration for every poem", async () => {
+  const [manifestSource, voiceEditionSource, player, catalog] = await Promise.all([
     readFile(new URL("public/audio/zh/manifest.json", root), "utf8"),
+    readFile(new URL("content/poems/audio-voices.json", root), "utf8"),
     readFile(new URL("components/PoemNarration.tsx", root), "utf8"),
     readFile(new URL("content/poems/catalog.ts", root), "utf8"),
   ]);
   const manifest = JSON.parse(manifestSource);
+  const voiceEdition = JSON.parse(voiceEditionSource);
   const slugs = manifest.poems.map((poem) => poem.slug);
+  const allowedVoices = new Set(["Serena", "Vivian", "Uncle_Fu"]);
 
   assert.equal(manifest.count, 300);
   assert.equal(slugs.length, 300);
   assert.equal(new Set(slugs).size, 300);
-  assert.equal(manifest.voice, "Tingting");
+  assert.match(manifest.model, /Qwen3-TTS-12Hz-1\.7B-CustomVoice/);
   assert.equal(manifest.locale, "zh_CN");
-  assert.ok(manifest.totalDurationSeconds > 5_000);
-  assert.ok(manifest.totalBytes > 80_000_000);
+  assert.equal(manifest.sampleRate, 24_000);
+  assert.deepEqual(manifest.voiceCounts, {
+    Serena: 155,
+    Vivian: 75,
+    Uncle_Fu: 70,
+  });
+  assert.equal(Object.keys(voiceEdition.voices).length, 300);
+  assert.ok(manifest.totalDurationSeconds > 8_000);
+  assert.ok(manifest.totalBytes > 120_000_000);
   assert.match(catalog, /audio: `\/audio\/zh\/\$\{poem\.slug\}\.mp3`/);
+  assert.match(catalog, /audioVoice: audioVoices\[poem\.slug\]\?\.voice/);
   assert.match(player, /<audio/);
   assert.match(player, /const playbackRates = \[0\.8, 1, 1\.2\]/);
   assert.match(player, /onActiveLineChange/);
+  assert.match(player, /voice\.replaceAll/);
 
   await Promise.all(
     manifest.poems.map(async (poem) => {
@@ -113,6 +125,12 @@ test("ships one fixed Mandarin narration for every poem", async () => {
       assert.ok(file.size > 4_096, `${poem.slug} narration is incomplete`);
       assert.equal(file.size, poem.bytes, `${poem.slug} byte count drifted`);
       assert.ok(poem.durationSeconds > 1, `${poem.slug} duration is invalid`);
+      assert.ok(allowedVoices.has(poem.voice), `${poem.slug} has unknown voice`);
+      assert.equal(
+        poem.voice,
+        voiceEdition.voices[poem.slug].voice,
+        `${poem.slug} voice assignment drifted`,
+      );
     }),
   );
 });

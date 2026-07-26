@@ -1,5 +1,11 @@
 import type { Poem } from "../../lib/types";
+import audioVoiceEdition from "./audio-voices.json";
 import { tangAnthologyPoems } from "./tang-anthology";
+
+const audioVoices = audioVoiceEdition.voices as Record<
+  string,
+  { voice: string; reason: string }
+>;
 
 const definePoem = (
   poem: Omit<Poem, "translator" | "license">,
@@ -1013,5 +1019,6 @@ export const poems: Poem[] = [...curatedPoems, ...tangAnthologyPoems].map(
   (poem) => ({
     ...poem,
     audio: `/audio/zh/${poem.slug}.mp3`,
+    audioVoice: audioVoices[poem.slug]?.voice,
   }),
 );

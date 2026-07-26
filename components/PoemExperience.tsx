@@ -149,6 +149,7 @@ export function PoemExperience({
             lines={poem.originalChinese}
             onActiveLineChange={setActiveChineseLine}
             title={poem.title}
+            voice={poem.audioVoice}
           />
         ) : null}
 

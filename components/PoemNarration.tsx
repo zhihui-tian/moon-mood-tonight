@@ -15,11 +15,13 @@ export function PoemNarration({
   audio,
   lines,
   title,
+  voice,
   onActiveLineChange,
 }: {
   audio: string;
   lines: string[][];
   title: string;
+  voice?: string;
   onActiveLineChange: (line: number | null) => void;
 }) {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -125,7 +127,10 @@ export function PoemNarration({
               : flattenedLines[activeLine ?? 0] ?? "点击播放，慢慢听诗"}
           </p>
         </div>
-        <span>{isPlaying ? "Reading" : "Ready"}</span>
+        <span>
+          {voice ? `${voice.replaceAll("_", " ")} · ` : ""}
+          {isPlaying ? "Reading" : "Ready"}
+        </span>
       </div>
 
       <div className="narration-controls">

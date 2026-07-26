@@ -61,16 +61,29 @@ Create and validate a production build:
 pnpm test
 ```
 
-Regenerate all Mandarin narration files on macOS:
+The current audio edition uses local Qwen3-TTS neural synthesis, with the voice
+chosen from the poem's content:
+
+- **Serena** for longing, farewell, moonlit, reflective, and narrative poems
+- **Vivian** for spring, brightness, movement, landscape, and wonder
+- **Uncle Fu** for frontier, battle, history, heroism, and monumental subjects
+
+The editorial plan currently assigns 155 poems to Serena, 75 to Vivian, and 70
+to Uncle Fu. Audio is generated at 24 kHz with
+`Qwen3-TTS-12Hz-1.7B-CustomVoice`, then encoded as mono 128 kbps MP3.
+
+Regeneration is a three-stage workflow on an Apple Silicon Mac with
+`mlx-audio`, NumPy, and SciPy installed:
 
 ```bash
-pnpm audio:generate
+pnpm audio:plan
+python scripts/generate-neural-audio.py
+pnpm audio:encode
 ```
 
-The current audio edition was synthesized locally with the macOS `Tingting`
-Mandarin system voice at a measured pace, then encoded as mono 128 kbps MP3.
-The checked-in manifest records the voice, speed, duration, and file size for
-every poem so the complete audio edition can be validated or replaced later.
+The checked-in manifests record the model, voice choice, editorial reason,
+duration, and file size for every poem so the complete audio edition can be
+validated or replaced later.
 
 ## Editorial and source note
 

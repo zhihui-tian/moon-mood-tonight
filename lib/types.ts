@@ -32,6 +32,7 @@ export type Poem = {
   source?: string;
   excerpt?: boolean;
   audio?: string;
+  audioVoice?: string;
 };
 
 export type Mood = {

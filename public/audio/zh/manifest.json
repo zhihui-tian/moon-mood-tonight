@@ -1,2111 +1,2717 @@
 {
-  "voice": "Tingting",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-bf16",
+  "strategy": "Content-led editorial voice assignment",
   "locale": "zh_CN",
-  "speechRate": 165,
+  "sampleRate": 24000,
   "bitrateKbps": 128,
   "count": 300,
-  "totalBytes": 88100626,
-  "totalDurationSeconds": 5487.03,
+  "voiceCounts": {
+    "Serena": 155,
+    "Vivian": 75,
+    "Uncle_Fu": 70
+  },
+  "totalBytes": 133327872,
+  "totalDurationSeconds": 8315.94,
   "poems": [
     {
       "slug": "the-reeds",
       "file": "/audio/zh/the-reeds.mp3",
-      "characters": 123,
-      "durationSeconds": 31.09,
-      "bytes": 498207
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 99,
+      "durationSeconds": 37.84,
+      "bytes": 606336
     },
     {
       "slug": "long-long-the-road",
       "file": "/audio/zh/long-long-the-road.mp3",
-      "characters": 96,
-      "durationSeconds": 23.49,
-      "bytes": 376999
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 80,
+      "durationSeconds": 37.2,
+      "bytes": 595968
     },
     {
       "slug": "drinking-wine-v",
       "file": "/audio/zh/drinking-wine-v.mp3",
-      "characters": 60,
-      "durationSeconds": 14.72,
-      "bytes": 236564
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 50,
+      "durationSeconds": 20.24,
+      "bytes": 324864
     },
     {
       "slug": "spring-river-flower-moon-night",
       "file": "/audio/zh/spring-river-flower-moon-night.mp3",
-      "characters": 160,
-      "durationSeconds": 39.67,
-      "bytes": 635715
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 140,
+      "durationSeconds": 50.16,
+      "bytes": 803328
     },
     {
       "slug": "autumn-evening-in-the-mountains",
       "file": "/audio/zh/autumn-evening-in-the-mountains.mp3",
-      "characters": 48,
-      "durationSeconds": 12.15,
-      "bytes": 195186
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 25.28,
+      "bytes": 405504
     },
     {
       "slug": "bring-in-the-wine",
       "file": "/audio/zh/bring-in-the-wine.mp3",
-      "characters": 156,
-      "durationSeconds": 38.34,
-      "bytes": 614400
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 134,
+      "durationSeconds": 55.12,
+      "bytes": 882816
     },
     {
       "slug": "climbing-high",
       "file": "/audio/zh/climbing-high.mp3",
-      "characters": 64,
-      "durationSeconds": 15.79,
-      "bytes": 253701
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 56,
+      "durationSeconds": 21.2,
+      "bytes": 340224
     },
     {
       "slug": "yellow-crane-tower",
       "file": "/audio/zh/yellow-crane-tower.mp3",
-      "characters": 64,
-      "durationSeconds": 15.59,
-      "bytes": 250357
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 56,
+      "durationSeconds": 24.64,
+      "bytes": 395136
     },
     {
       "slug": "song-of-the-pipa",
       "file": "/audio/zh/song-of-the-pipa.mp3",
-      "characters": 208,
-      "durationSeconds": 52.17,
-      "bytes": 835918
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 182,
+      "durationSeconds": 83.68,
+      "bytes": 1339776
     },
     {
       "slug": "the-jeweled-zither",
       "file": "/audio/zh/the-jeweled-zither.mp3",
-      "characters": 64,
-      "durationSeconds": 15.57,
-      "bytes": 250357
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 56,
+      "durationSeconds": 29.2,
+      "bytes": 468096
     },
     {
       "slug": "quiet-night-thought",
       "file": "/audio/zh/quiet-night-thought.mp3",
-      "characters": 24,
-      "durationSeconds": 5.77,
-      "bytes": 93204
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 20,
+      "durationSeconds": 8,
+      "bytes": 129024
     },
     {
       "slug": "deer-enclosure",
       "file": "/audio/zh/deer-enclosure.mp3",
-      "characters": 24,
-      "durationSeconds": 5.92,
-      "bytes": 95712
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 7.92,
+      "bytes": 127488
     },
     {
       "slug": "river-snow",
       "file": "/audio/zh/river-snow.mp3",
-      "characters": 24,
-      "durationSeconds": 5.79,
-      "bytes": 93622
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 20,
+      "durationSeconds": 8.32,
+      "bytes": 134016
     },
     {
       "slug": "night-mooring-at-maple-bridge",
       "file": "/audio/zh/night-mooring-at-maple-bridge.mp3",
-      "characters": 32,
-      "durationSeconds": 8.04,
-      "bytes": 129567
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 28,
+      "durationSeconds": 13.52,
+      "bytes": 217344
     },
     {
       "slug": "on-the-stork-tower",
       "file": "/audio/zh/on-the-stork-tower.mp3",
-      "characters": 24,
-      "durationSeconds": 5.67,
-      "bytes": 91533
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 20,
+      "durationSeconds": 8.96,
+      "bytes": 144384
     },
     {
       "slug": "early-departure-from-white-emperor-city",
       "file": "/audio/zh/early-departure-from-white-emperor-city.mp3",
-      "characters": 32,
-      "durationSeconds": 7.64,
-      "bytes": 123297
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 13.92,
+      "bytes": 223488
     },
     {
       "slug": "seeing-meng-haoran-off",
       "file": "/audio/zh/seeing-meng-haoran-off.mp3",
-      "characters": 32,
-      "durationSeconds": 7.8,
-      "bytes": 125805
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 28,
+      "durationSeconds": 10.32,
+      "bytes": 165888
     },
     {
       "slug": "spring-morning",
       "file": "/audio/zh/spring-morning.mp3",
-      "characters": 24,
-      "durationSeconds": 5.77,
-      "bytes": 93204
+      "voice": "Vivian",
+      "reason": "Editorial assignment for this poem",
+      "characters": 20,
+      "durationSeconds": 12.08,
+      "bytes": 194304
     },
     {
       "slug": "frontier-song",
       "file": "/audio/zh/frontier-song.mp3",
-      "characters": 32,
-      "durationSeconds": 7.81,
-      "bytes": 125805
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 28,
+      "durationSeconds": 12.08,
+      "bytes": 194304
     },
     {
       "slug": "summer-quatrain",
       "file": "/audio/zh/summer-quatrain.mp3",
-      "characters": 24,
-      "durationSeconds": 5.74,
-      "bytes": 92786
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 20,
+      "durationSeconds": 8.56,
+      "bytes": 137856
     },
     {
       "slug": "remembering-my-brothers",
       "file": "/audio/zh/remembering-my-brothers.mp3",
-      "characters": 32,
-      "durationSeconds": 7.33,
-      "bytes": 118282
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 12.08,
+      "bytes": 194304
     },
     {
       "slug": "mount-lu-waterfall",
       "file": "/audio/zh/mount-lu-waterfall.mp3",
-      "characters": 32,
-      "durationSeconds": 8,
-      "bytes": 129149
+      "voice": "Vivian",
+      "reason": "Editorial assignment for this poem",
+      "characters": 28,
+      "durationSeconds": 10.8,
+      "bytes": 173568
     },
     {
       "slug": "prelude-to-water-melody",
       "file": "/audio/zh/prelude-to-water-melody.mp3",
-      "characters": 114,
-      "durationSeconds": 28.61,
-      "bytes": 458919
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 95,
+      "durationSeconds": 36.8,
+      "bytes": 589824
     },
     {
       "slug": "plum-blossom",
       "file": "/audio/zh/plum-blossom.mp3",
-      "characters": 24,
-      "durationSeconds": 5.68,
-      "bytes": 91951
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 10.96,
+      "bytes": 176256
     },
     {
       "slug": "view-of-mount-tai",
       "file": "/audio/zh/view-of-mount-tai.mp3",
-      "characters": 48,
-      "durationSeconds": 11.8,
-      "bytes": 189753
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 40,
+      "durationSeconds": 14.64,
+      "bytes": 235008
     },
     {
       "slug": "river-village",
       "file": "/audio/zh/river-village.mp3",
-      "characters": 64,
-      "durationSeconds": 16.08,
-      "bytes": 258298
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 56,
+      "durationSeconds": 25.84,
+      "bytes": 414336
     },
     {
       "slug": "night-rain-sent-north",
       "file": "/audio/zh/night-rain-sent-north.mp3",
-      "characters": 32,
-      "durationSeconds": 7.91,
-      "bytes": 127477
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 28,
+      "durationSeconds": 13.2,
+      "bytes": 211968
     },
     {
       "slug": "liangzhou-song",
       "file": "/audio/zh/liangzhou-song.mp3",
-      "characters": 32,
-      "durationSeconds": 7.51,
-      "bytes": 121208
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 28,
+      "durationSeconds": 11.2,
+      "bytes": 180096
     },
     {
       "slug": "orchid-and-orange-i-zhang-jiuling-002",
       "file": "/audio/zh/orchid-and-orange-i-zhang-jiuling-002.mp3",
-      "characters": 48,
-      "durationSeconds": 11.8,
-      "bytes": 189753
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 40,
+      "durationSeconds": 14.08,
+      "bytes": 226176
     },
     {
       "slug": "orchid-and-orange-ii-zhang-jiuling-004",
       "file": "/audio/zh/orchid-and-orange-ii-zhang-jiuling-004.mp3",
-      "characters": 60,
-      "durationSeconds": 14.83,
-      "bytes": 238236
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 50,
+      "durationSeconds": 27.2,
+      "bytes": 436224
     },
     {
       "slug": "down-zhongnan-mountain-to-the-kind-pillow-and-bowl-of-husi-li-bai-005",
       "file": "/audio/zh/down-zhongnan-mountain-to-the-kind-pillow-and-bowl-of-husi-li-bai-005.mp3",
-      "characters": 84,
-      "durationSeconds": 20.8,
-      "bytes": 333949
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 70,
+      "durationSeconds": 46.64,
+      "bytes": 747264
     },
     {
       "slug": "drinking-alone-with-the-moon-li-bai-006",
       "file": "/audio/zh/drinking-alone-with-the-moon-li-bai-006.mp3",
-      "characters": 84,
-      "durationSeconds": 20.91,
-      "bytes": 335621
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 70,
+      "durationSeconds": 28.48,
+      "bytes": 456576
     },
     {
       "slug": "in-spring-li-bai-007",
       "file": "/audio/zh/in-spring-li-bai-007.mp3",
-      "characters": 36,
-      "durationSeconds": 9.05,
-      "bytes": 145867
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 30,
+      "durationSeconds": 11.6,
+      "bytes": 186624
     },
     {
       "slug": "a-view-of-taishan-du-fu-008",
       "file": "/audio/zh/a-view-of-taishan-du-fu-008.mp3",
-      "characters": 48,
-      "durationSeconds": 11.87,
-      "bytes": 191007
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 13.68,
+      "bytes": 219648
     },
     {
       "slug": "to-my-retired-friend-wei-du-fu-009",
       "file": "/audio/zh/to-my-retired-friend-wei-du-fu-009.mp3",
-      "characters": 144,
-      "durationSeconds": 35.74,
-      "bytes": 573022
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 120,
+      "durationSeconds": 54.32,
+      "bytes": 870144
     },
     {
       "slug": "alone-in-her-beauty-du-fu-010",
       "file": "/audio/zh/alone-in-her-beauty-du-fu-010.mp3",
-      "characters": 144,
-      "durationSeconds": 35.37,
-      "bytes": 567170
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 120,
+      "durationSeconds": 42.96,
+      "bytes": 688128
     },
     {
       "slug": "seeing-li-bai-in-a-dream-i-du-fu-011",
       "file": "/audio/zh/seeing-li-bai-in-a-dream-i-du-fu-011.mp3",
-      "characters": 96,
-      "durationSeconds": 23.25,
-      "bytes": 372819
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 80,
+      "durationSeconds": 30.4,
+      "bytes": 487296
     },
     {
       "slug": "seeing-li-bai-in-a-dream-ii-du-fu-012",
       "file": "/audio/zh/seeing-li-bai-in-a-dream-ii-du-fu-012.mp3",
-      "characters": 96,
-      "durationSeconds": 23.76,
-      "bytes": 381178
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 80,
+      "durationSeconds": 33.36,
+      "bytes": 534528
     },
     {
       "slug": "at-parting-wang-wei-013",
       "file": "/audio/zh/at-parting-wang-wei-013.mp3",
-      "characters": 36,
-      "durationSeconds": 8.62,
-      "bytes": 138762
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 30,
+      "durationSeconds": 12,
+      "bytes": 192768
     },
     {
       "slug": "to-qiwu-qian-bound-home-after-failing-in-an-examination-wang-wei-014",
       "file": "/audio/zh/to-qiwu-qian-bound-home-after-failing-in-an-examination-wang-wei-014.mp3",
-      "characters": 96,
-      "durationSeconds": 23.27,
-      "bytes": 373237
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 80,
+      "durationSeconds": 41.92,
+      "bytes": 671616
     },
     {
       "slug": "a-green-stream-wang-wei-015",
       "file": "/audio/zh/a-green-stream-wang-wei-015.mp3",
-      "characters": 72,
-      "durationSeconds": 18.38,
-      "bytes": 295079
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 60,
+      "durationSeconds": 24.96,
+      "bytes": 400128
     },
     {
       "slug": "a-farm-house-on-the-wei-river-wang-wei-016",
       "file": "/audio/zh/a-farm-house-on-the-wei-river-wang-wei-016.mp3",
-      "characters": 60,
-      "durationSeconds": 14.69,
-      "bytes": 236146
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 50,
+      "durationSeconds": 20.96,
+      "bytes": 336384
     },
     {
       "slug": "the-beautiful-xi-shi-wang-wei-017",
       "file": "/audio/zh/the-beautiful-xi-shi-wang-wei-017.mp3",
-      "characters": 84,
-      "durationSeconds": 20.24,
-      "bytes": 324754
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 70,
+      "durationSeconds": 35.04,
+      "bytes": 561408
     },
     {
       "slug": "on-climbing-orchid-mountain-in-the-autumn-to-zhang-meng-haoran-018",
       "file": "/audio/zh/on-climbing-orchid-mountain-in-the-autumn-to-zhang-meng-haoran-018.mp3",
-      "characters": 72,
-      "durationSeconds": 17.97,
-      "bytes": 288391
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 60,
+      "durationSeconds": 24,
+      "bytes": 384768
     },
     {
       "slug": "in-summer-at-the-south-pavilion-thinking-of-xing-meng-haoran-019",
       "file": "/audio/zh/in-summer-at-the-south-pavilion-thinking-of-xing-meng-haoran-019.mp3",
-      "characters": 60,
-      "durationSeconds": 15.27,
-      "bytes": 245342
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 50,
+      "durationSeconds": 23.92,
+      "bytes": 383616
     },
     {
       "slug": "at-the-mountain-lodge-of-the-buddhist-priest-ye-waiting-in-vain-for-my-friend-ding-meng-haoran-020",
       "file": "/audio/zh/at-the-mountain-lodge-of-the-buddhist-priest-ye-waiting-in-vain-for-my-friend-ding-meng-haoran-020.mp3",
-      "characters": 48,
-      "durationSeconds": 12.22,
-      "bytes": 196440
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 22.72,
+      "bytes": 364416
     },
     {
       "slug": "with-my-brother-at-the-south-study-thinking-in-the-moonlight-of-vice-prefect-cui-in-shanyin-wang-changling-021",
       "file": "/audio/zh/with-my-brother-at-the-south-study-thinking-in-the-moonlight-of-vice-prefect-cui-in-shanyin-wang-changling-021.mp3",
-      "characters": 60,
-      "durationSeconds": 14.7,
-      "bytes": 236146
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 50,
+      "durationSeconds": 26.48,
+      "bytes": 424704
     },
     {
       "slug": "after-missing-the-recluse-on-the-western-mountain-qiu-wei-022",
       "file": "/audio/zh/after-missing-the-recluse-on-the-western-mountain-qiu-wei-022.mp3",
-      "characters": 96,
-      "durationSeconds": 23.69,
-      "bytes": 379924
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 80,
+      "durationSeconds": 32.08,
+      "bytes": 514176
     },
     {
       "slug": "a-boat-in-spring-on-ruoya-lake-qiwu-qian-023",
       "file": "/audio/zh/a-boat-in-spring-on-ruoya-lake-qiwu-qian-023.mp3",
-      "characters": 60,
-      "durationSeconds": 14.59,
-      "bytes": 234475
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 50,
+      "durationSeconds": 23.84,
+      "bytes": 382464
     },
     {
       "slug": "at-wang-changlin-s-retreat-chang-jian-024",
       "file": "/audio/zh/at-wang-changlin-s-retreat-chang-jian-024.mp3",
-      "characters": 48,
-      "durationSeconds": 12.03,
-      "bytes": 193515
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 16.32,
+      "bytes": 261888
     },
     {
       "slug": "ascending-the-pagoda-at-the-temple-of-kind-favour-with-gao-shi-and-xue-ju-cen-can-025",
       "file": "/audio/zh/ascending-the-pagoda-at-the-temple-of-kind-favour-with-gao-shi-and-xue-ju-cen-can-025.mp3",
-      "characters": 132,
-      "durationSeconds": 32.86,
-      "bytes": 526628
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 110,
+      "durationSeconds": 51.28,
+      "bytes": 821376
     },
     {
       "slug": "to-the-tax-collectors-after-the-bandits-retreat-yuan-jie-026",
       "file": "/audio/zh/to-the-tax-collectors-after-the-bandits-retreat-yuan-jie-026.mp3",
-      "characters": 144,
-      "durationSeconds": 36.64,
-      "bytes": 587232
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 120,
+      "durationSeconds": 44.08,
+      "bytes": 706176
     },
     {
       "slug": "entertaining-literary-men-in-my-official-residence-on-a-rainy-day-wei-yingwu-027",
       "file": "/audio/zh/entertaining-literary-men-in-my-official-residence-on-a-rainy-day-wei-yingwu-027.mp3",
-      "characters": 120,
-      "durationSeconds": 30.49,
-      "bytes": 489012
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 100,
+      "durationSeconds": 35.84,
+      "bytes": 574464
     },
     {
       "slug": "setting-sail-on-the-yangzi-to-secretary-yuan-wei-yingwu-028",
       "file": "/audio/zh/setting-sail-on-the-yangzi-to-secretary-yuan-wei-yingwu-028.mp3",
-      "characters": 48,
-      "durationSeconds": 11.6,
-      "bytes": 186827
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 13.76,
+      "bytes": 221184
     },
     {
       "slug": "a-poem-to-a-taoist-hermit-chuanjiao-mountain-wei-yingwu-029",
       "file": "/audio/zh/a-poem-to-a-taoist-hermit-chuanjiao-mountain-wei-yingwu-029.mp3",
-      "characters": 48,
-      "durationSeconds": 11.87,
-      "bytes": 191007
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 16,
+      "bytes": 256896
     },
     {
       "slug": "on-meeting-my-friend-feng-zhu-in-the-capital-wei-yingwu-030",
       "file": "/audio/zh/on-meeting-my-friend-feng-zhu-in-the-capital-wei-yingwu-030.mp3",
-      "characters": 48,
-      "durationSeconds": 11.82,
-      "bytes": 190171
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 16.56,
+      "bytes": 265728
     },
     {
       "slug": "mooring-at-twilight-in-yuyi-district-wei-yingwu-031",
       "file": "/audio/zh/mooring-at-twilight-in-yuyi-district-wei-yingwu-031.mp3",
-      "characters": 48,
-      "durationSeconds": 11.61,
-      "bytes": 186827
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 16.16,
+      "bytes": 259584
     },
     {
       "slug": "east-of-the-town-wei-yingwu-032",
       "file": "/audio/zh/east-of-the-town-wei-yingwu-032.mp3",
-      "characters": 72,
-      "durationSeconds": 17.59,
-      "bytes": 282540
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 60,
+      "durationSeconds": 27.04,
+      "bytes": 433536
     },
     {
       "slug": "to-my-daughter-on-her-marriage-into-the-yang-family-wei-yingwu-033",
       "file": "/audio/zh/to-my-daughter-on-her-marriage-into-the-yang-family-wei-yingwu-033.mp3",
-      "characters": 144,
-      "durationSeconds": 35.72,
-      "bytes": 572604
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 120,
+      "durationSeconds": 50.96,
+      "bytes": 816384
     },
     {
       "slug": "reading-buddhist-classics-with-zhao-at-his-temple-in-the-early-morning-liu-zongyuan-034",
       "file": "/audio/zh/reading-buddhist-classics-with-zhao-at-his-temple-in-the-early-morning-liu-zongyuan-034.mp3",
-      "characters": 84,
-      "durationSeconds": 20.55,
-      "bytes": 329769
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 70,
+      "durationSeconds": 31.76,
+      "bytes": 509184
     },
     {
       "slug": "dwelling-by-a-stream-liu-zongyuan-035",
       "file": "/audio/zh/dwelling-by-a-stream-liu-zongyuan-035.mp3",
-      "characters": 48,
-      "durationSeconds": 11.88,
-      "bytes": 191007
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 19.84,
+      "bytes": 318336
     },
     {
       "slug": "at-a-border-fortress-wang-changling-036",
       "file": "/audio/zh/at-a-border-fortress-wang-changling-036.mp3",
-      "characters": 48,
-      "durationSeconds": 11.94,
-      "bytes": 192261
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 15.6,
+      "bytes": 250368
     },
     {
       "slug": "under-a-border-fortress-wang-changling-037",
       "file": "/audio/zh/under-a-border-fortress-wang-changling-037.mp3",
-      "characters": 48,
-      "durationSeconds": 12.04,
-      "bytes": 193933
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 16.08,
+      "bytes": 258048
     },
     {
       "slug": "the-moon-at-the-fortified-pass-li-bai-038",
       "file": "/audio/zh/the-moon-at-the-fortified-pass-li-bai-038.mp3",
-      "characters": 72,
-      "durationSeconds": 18.02,
-      "bytes": 289227
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 60,
+      "durationSeconds": 26.64,
+      "bytes": 427008
     },
     {
       "slug": "a-song-of-an-autumn-midnight-li-bai-041",
       "file": "/audio/zh/a-song-of-an-autumn-midnight-li-bai-041.mp3",
-      "characters": 36,
-      "durationSeconds": 8.67,
-      "bytes": 139598
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 30,
+      "durationSeconds": 10.32,
+      "bytes": 165888
     },
     {
       "slug": "a-song-of-changgan-li-bai-043",
       "file": "/audio/zh/a-song-of-changgan-li-bai-043.mp3",
-      "characters": 180,
-      "durationSeconds": 45.77,
-      "bytes": 733518
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 150,
+      "durationSeconds": 69.52,
+      "bytes": 1113216
     },
     {
       "slug": "a-song-of-a-pure-hearted-girl-meng-jiao-044",
       "file": "/audio/zh/a-song-of-a-pure-hearted-girl-meng-jiao-044.mp3",
-      "characters": 36,
-      "durationSeconds": 8.89,
-      "bytes": 143360
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 30,
+      "durationSeconds": 14.24,
+      "bytes": 228864
     },
     {
       "slug": "a-travellers-song-meng-jiao-045",
       "file": "/audio/zh/a-travellers-song-meng-jiao-045.mp3",
-      "characters": 36,
-      "durationSeconds": 8.96,
-      "bytes": 144195
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 30,
+      "durationSeconds": 12.96,
+      "bytes": 208128
     },
     {
       "slug": "on-a-gate-tower-at-yuzhou-chen-ziang-046",
       "file": "/audio/zh/on-a-gate-tower-at-yuzhou-chen-ziang-046.mp3",
-      "characters": 26,
-      "durationSeconds": 6.08,
-      "bytes": 98220
+      "voice": "Uncle_Fu",
+      "reason": "Editorial assignment for this poem",
+      "characters": 22,
+      "durationSeconds": 7.76,
+      "bytes": 125184
     },
     {
       "slug": "an-old-air-li-qi-047",
       "file": "/audio/zh/an-old-air-li-qi-047.mp3",
-      "characters": 84,
-      "durationSeconds": 20.61,
-      "bytes": 331023
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 72,
+      "durationSeconds": 35.04,
+      "bytes": 561408
     },
     {
       "slug": "a-farewell-to-my-friend-chen-zhangfu-li-qi-048",
       "file": "/audio/zh/a-farewell-to-my-friend-chen-zhangfu-li-qi-048.mp3",
-      "characters": 144,
-      "durationSeconds": 34.88,
-      "bytes": 559229
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 126,
+      "durationSeconds": 56,
+      "bytes": 897024
     },
     {
       "slug": "a-lute-song-li-qi-049",
       "file": "/audio/zh/a-lute-song-li-qi-049.mp3",
-      "characters": 80,
-      "durationSeconds": 19.36,
-      "bytes": 310961
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 70,
+      "durationSeconds": 24.16,
+      "bytes": 387456
     },
     {
       "slug": "on-hearing-dong-play-the-flageolet-a-poem-to-palace-attendant-fang-li-qi-050",
       "file": "/audio/zh/on-hearing-dong-play-the-flageolet-a-poem-to-palace-attendant-fang-li-qi-050.mp3",
-      "characters": 220,
-      "durationSeconds": 54.92,
-      "bytes": 879804
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 191,
+      "durationSeconds": 73.2,
+      "bytes": 1171968
     },
     {
       "slug": "on-hearing-an-wanshan-play-the-reed-pipe-li-qi-051",
       "file": "/audio/zh/on-hearing-an-wanshan-play-the-reed-pipe-li-qi-051.mp3",
-      "characters": 144,
-      "durationSeconds": 35.25,
-      "bytes": 565080
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 126,
+      "durationSeconds": 55.92,
+      "bytes": 895488
     },
     {
       "slug": "returning-at-night-to-lumen-mountain-meng-haoran-052",
       "file": "/audio/zh/returning-at-night-to-lumen-mountain-meng-haoran-052.mp3",
-      "characters": 64,
-      "durationSeconds": 15.51,
-      "bytes": 249103
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 56,
+      "durationSeconds": 18.88,
+      "bytes": 302976
     },
     {
       "slug": "a-song-of-lu-mountain-to-censor-lu-xuzhou-li-bai-053",
       "file": "/audio/zh/a-song-of-lu-mountain-to-censor-lu-xuzhou-li-bai-053.mp3",
-      "characters": 220,
-      "durationSeconds": 55.09,
-      "bytes": 882729
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 191,
+      "durationSeconds": 84.24,
+      "bytes": 1348608
     },
     {
       "slug": "tianmu-mountain-ascended-in-a-dream-li-bai-054",
       "file": "/audio/zh/tianmu-mountain-ascended-in-a-dream-li-bai-054.mp3",
-      "characters": 330,
-      "durationSeconds": 81.09,
-      "bytes": 1298599
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 285,
+      "durationSeconds": 137.06,
+      "bytes": 2193792
     },
     {
       "slug": "parting-at-a-wine-shop-in-nanjing-li-bai-055",
       "file": "/audio/zh/parting-at-a-wine-shop-in-nanjing-li-bai-055.mp3",
-      "characters": 48,
-      "durationSeconds": 11.61,
-      "bytes": 186827
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 42,
+      "durationSeconds": 23.04,
+      "bytes": 369408
     },
     {
       "slug": "a-farewell-to-secretary-shuyun-at-the-xietiao-villa-in-xuanzhou-li-bai-056",
       "file": "/audio/zh/a-farewell-to-secretary-shuyun-at-the-xietiao-villa-in-xuanzhou-li-bai-056.mp3",
-      "characters": 106,
-      "durationSeconds": 25.83,
-      "bytes": 414197
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 92,
+      "durationSeconds": 48,
+      "bytes": 768768
     },
     {
       "slug": "a-song-of-running-horse-river-in-farewell-to-general-feng-of-the-western-expedition-cen-can-057",
       "file": "/audio/zh/a-song-of-running-horse-river-in-farewell-to-general-feng-of-the-western-expedition-cen-can-057.mp3",
-      "characters": 139,
-      "durationSeconds": 34.54,
-      "bytes": 553795
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 122,
+      "durationSeconds": 50,
+      "bytes": 801024
     },
     {
       "slug": "a-song-of-wheel-tower-in-farewell-to-general-feng-of-the-western-expedition-cen-can-058",
       "file": "/audio/zh/a-song-of-wheel-tower-in-farewell-to-general-feng-of-the-western-expedition-cen-can-058.mp3",
-      "characters": 144,
-      "durationSeconds": 36.32,
-      "bytes": 582217
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 126,
+      "durationSeconds": 51.44,
+      "bytes": 824064
     },
     {
       "slug": "a-song-of-white-snow-in-farewell-to-field-clerk-wu-going-home-cen-can-059",
       "file": "/audio/zh/a-song-of-white-snow-in-farewell-to-field-clerk-wu-going-home-cen-can-059.mp3",
-      "characters": 144,
-      "durationSeconds": 35.61,
-      "bytes": 570932
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 126,
+      "durationSeconds": 46.88,
+      "bytes": 751104
     },
     {
       "slug": "a-drawing-of-a-horse-by-general-cao-at-secretary-wei-fengs-house-du-fu-060",
       "file": "/audio/zh/a-drawing-of-a-horse-by-general-cao-at-secretary-wei-fengs-house-du-fu-060.mp3",
-      "characters": 276,
-      "durationSeconds": 68.31,
-      "bytes": 1094217
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 241,
+      "durationSeconds": 96.82,
+      "bytes": 1550208
     },
     {
       "slug": "a-song-of-a-painting-to-general-cao-du-fu-061",
       "file": "/audio/zh/a-song-of-a-painting-to-general-cao-du-fu-061.mp3",
-      "characters": 320,
-      "durationSeconds": 79.14,
-      "bytes": 1267252
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 280,
+      "durationSeconds": 98.74,
+      "bytes": 1580928
     },
     {
       "slug": "a-letter-to-censor-han-du-fu-062",
       "file": "/audio/zh/a-letter-to-censor-han-du-fu-062.mp3",
-      "characters": 176,
-      "durationSeconds": 43.58,
-      "bytes": 698409
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 154,
+      "durationSeconds": 61.52,
+      "bytes": 985344
     },
     {
       "slug": "a-song-of-an-old-cypress-du-fu-063",
       "file": "/audio/zh/a-song-of-an-old-cypress-du-fu-063.mp3",
-      "characters": 192,
-      "durationSeconds": 46.26,
-      "bytes": 741041
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 168,
+      "durationSeconds": 54.64,
+      "bytes": 875136
     },
     {
       "slug": "a-song-of-dagger-dancing-to-a-girl-pupil-of-lady-gongsun-du-fu-064",
       "file": "/audio/zh/a-song-of-dagger-dancing-to-a-girl-pupil-of-lady-gongsun-du-fu-064.mp3",
-      "characters": 208,
-      "durationSeconds": 50.25,
-      "bytes": 804989
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 182,
+      "durationSeconds": 73.2,
+      "bytes": 1171968
     },
     {
       "slug": "a-drinking-song-at-stone-fish-lake-yuan-jie-065",
       "file": "/audio/zh/a-drinking-song-at-stone-fish-lake-yuan-jie-065.mp3",
-      "characters": 64,
-      "durationSeconds": 15.99,
-      "bytes": 257044
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 54,
+      "durationSeconds": 29.04,
+      "bytes": 465408
     },
     {
       "slug": "mountain-stones-han-yu-066",
       "file": "/audio/zh/mountain-stones-han-yu-066.mp3",
-      "characters": 160,
-      "durationSeconds": 38.84,
-      "bytes": 622341
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 140,
+      "durationSeconds": 73.68,
+      "bytes": 1179648
     },
     {
       "slug": "on-the-festival-of-the-moon-to-sub-official-zhang-han-yu-067",
       "file": "/audio/zh/on-the-festival-of-the-moon-to-sub-official-zhang-han-yu-067.mp3",
-      "characters": 232,
-      "durationSeconds": 56.92,
-      "bytes": 911569
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 203,
+      "durationSeconds": 105.46,
+      "bytes": 1688448
     },
     {
       "slug": "stopping-at-a-temple-on-heng-mountain-i-inscribe-this-poem-in-the-gate-tower-han-yu-068",
       "file": "/audio/zh/stopping-at-a-temple-on-heng-mountain-i-inscribe-this-poem-in-the-gate-tower-han-yu-068.mp3",
-      "characters": 256,
-      "durationSeconds": 63.39,
-      "bytes": 1015222
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 224,
+      "durationSeconds": 109.7,
+      "bytes": 1756032
     },
     {
       "slug": "a-poem-on-the-stone-drums-han-yu-069",
       "file": "/audio/zh/a-poem-on-the-stone-drums-han-yu-069.mp3",
-      "characters": 528,
-      "durationSeconds": 129.38,
-      "bytes": 2070987
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 462,
+      "durationSeconds": 174.52,
+      "bytes": 2793216
     },
     {
       "slug": "an-old-fisherman-liu-zongyuan-070",
       "file": "/audio/zh/an-old-fisherman-liu-zongyuan-070.mp3",
-      "characters": 48,
-      "durationSeconds": 11.73,
-      "bytes": 188499
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 42,
+      "durationSeconds": 17.12,
+      "bytes": 274944
     },
     {
       "slug": "a-song-of-unending-sorrow-bai-juyi-071",
       "file": "/audio/zh/a-song-of-unending-sorrow-bai-juyi-071.mp3",
-      "characters": 960,
-      "durationSeconds": 237.36,
-      "bytes": 3798831
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 840,
+      "durationSeconds": 381.36,
+      "bytes": 6102528
     },
     {
       "slug": "the-song-of-a-guitar-bai-chuyi-072",
       "file": "/audio/zh/the-song-of-a-guitar-bai-chuyi-072.mp3",
-      "characters": 704,
-      "durationSeconds": 175.34,
-      "bytes": 2806595
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 616,
+      "durationSeconds": 242.7,
+      "bytes": 3884160
     },
     {
       "slug": "the-han-monument-li-shangyin-073",
       "file": "/audio/zh/the-han-monument-li-shangyin-073.mp3",
-      "characters": 418,
-      "durationSeconds": 102.02,
-      "bytes": 1633384
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 366,
+      "durationSeconds": 154.04,
+      "bytes": 2465664
     },
     {
       "slug": "a-song-of-the-yan-country-gao-shi-074",
       "file": "/audio/zh/a-song-of-the-yan-country-gao-shi-074.mp3",
-      "characters": 225,
-      "durationSeconds": 56.46,
-      "bytes": 904463
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 197,
+      "durationSeconds": 79.62,
+      "bytes": 1274880
     },
     {
       "slug": "an-old-war-song-li-qi-075",
       "file": "/audio/zh/an-old-war-song-li-qi-075.mp3",
-      "characters": 96,
-      "durationSeconds": 22.91,
-      "bytes": 367386
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 84,
+      "durationSeconds": 31.36,
+      "bytes": 502656
     },
     {
       "slug": "a-song-of-a-girl-from-loyang-wang-wei-076",
       "file": "/audio/zh/a-song-of-a-girl-from-loyang-wang-wei-076.mp3",
-      "characters": 160,
-      "durationSeconds": 39.57,
-      "bytes": 634044
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 140,
+      "durationSeconds": 64.24,
+      "bytes": 1028736
     },
     {
       "slug": "song-of-an-old-general-wang-wei-077",
       "file": "/audio/zh/song-of-an-old-general-wang-wei-077.mp3",
-      "characters": 240,
-      "durationSeconds": 59.5,
-      "bytes": 952946
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 210,
+      "durationSeconds": 74.02,
+      "bytes": 1185408
     },
     {
       "slug": "a-song-of-peach-blossom-river-wang-wei-078",
       "file": "/audio/zh/a-song-of-peach-blossom-river-wang-wei-078.mp3",
-      "characters": 256,
-      "durationSeconds": 64.24,
-      "bytes": 1029015
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 224,
+      "durationSeconds": 113.62,
+      "bytes": 1819008
     },
     {
       "slug": "hard-roads-in-shu-li-bai-079",
       "file": "/audio/zh/hard-roads-in-shu-li-bai-079.mp3",
-      "characters": 340,
-      "durationSeconds": 85.09,
-      "bytes": 1362546
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 293,
+      "durationSeconds": 114.26,
+      "bytes": 1828992
     },
     {
       "slug": "endless-yearning-i-li-bai-080",
       "file": "/audio/zh/endless-yearning-i-li-bai-080.mp3",
-      "characters": 88,
-      "durationSeconds": 22.32,
-      "bytes": 358191
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 75,
+      "durationSeconds": 28.32,
+      "bytes": 453888
     },
     {
       "slug": "endless-yearning-ii-li-bai-081",
       "file": "/audio/zh/endless-yearning-ii-li-bai-081.mp3",
-      "characters": 82,
-      "durationSeconds": 20.86,
-      "bytes": 334785
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 71,
+      "durationSeconds": 42.8,
+      "bytes": 685824
     },
     {
       "slug": "the-hard-road-li-bai-082",
       "file": "/audio/zh/the-hard-road-li-bai-082.mp3",
-      "characters": 96,
-      "durationSeconds": 24.27,
-      "bytes": 389537
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 82,
+      "durationSeconds": 31.92,
+      "bytes": 511488
     },
     {
       "slug": "a-song-of-war-chariots-du-fu-086",
       "file": "/audio/zh/a-song-of-war-chariots-du-fu-086.mp3",
-      "characters": 260,
-      "durationSeconds": 64.82,
-      "bytes": 1038210
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 223,
+      "durationSeconds": 82.9,
+      "bytes": 1327488
     },
     {
       "slug": "a-song-of-fair-women-du-fu-087",
       "file": "/audio/zh/a-song-of-fair-women-du-fu-087.mp3",
-      "characters": 204,
-      "durationSeconds": 51.61,
-      "bytes": 826723
+      "voice": "Serena",
+      "reason": "Editorial assignment for this poem",
+      "characters": 178,
+      "durationSeconds": 83.68,
+      "bytes": 1339776
     },
     {
       "slug": "a-song-of-sobbing-by-the-river-du-fu-088",
       "file": "/audio/zh/a-song-of-sobbing-by-the-river-du-fu-088.mp3",
-      "characters": 160,
-      "durationSeconds": 39.38,
-      "bytes": 631118
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 140,
+      "durationSeconds": 53.68,
+      "bytes": 859776
     },
     {
       "slug": "a-song-of-a-prince-deposed-du-fu-089",
       "file": "/audio/zh/a-song-of-a-prince-deposed-du-fu-089.mp3",
-      "characters": 216,
-      "durationSeconds": 52.52,
-      "bytes": 841351
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 189,
+      "durationSeconds": 68.56,
+      "bytes": 1097856
     },
     {
       "slug": "i-pass-through-the-lu-dukedom-with-a-sigh-and-a-sacrifice-for-confucius-tang-xunzong-090",
       "file": "/audio/zh/i-pass-through-the-lu-dukedom-with-a-sigh-and-a-sacrifice-for-confucius-tang-xunzong-090.mp3",
-      "characters": 48,
-      "durationSeconds": 11.65,
-      "bytes": 187663
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 20.4,
+      "bytes": 327168
     },
     {
       "slug": "looking-at-the-moon-and-thinking-of-one-far-away-zhang-jiuling-091",
       "file": "/audio/zh/looking-at-the-moon-and-thinking-of-one-far-away-zhang-jiuling-091.mp3",
-      "characters": 48,
-      "durationSeconds": 11.85,
-      "bytes": 190589
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 23.12,
+      "bytes": 370944
     },
     {
       "slug": "farewell-to-vice-prefect-du-setting-out-for-his-official-post-in-shu-wang-bo-092",
       "file": "/audio/zh/farewell-to-vice-prefect-du-setting-out-for-his-official-post-in-shu-wang-bo-092.mp3",
-      "characters": 48,
-      "durationSeconds": 11.64,
-      "bytes": 187245
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 13.36,
+      "bytes": 214656
     },
     {
       "slug": "a-political-prisoner-listening-to-a-cicada-lo-bingwang-093",
       "file": "/audio/zh/a-political-prisoner-listening-to-a-cicada-lo-bingwang-093.mp3",
-      "characters": 48,
-      "durationSeconds": 12.15,
-      "bytes": 195186
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 40,
+      "durationSeconds": 17.92,
+      "bytes": 287616
     },
     {
       "slug": "on-a-walk-in-the-early-spring-harmonizing-a-poem-by-my-friend-lu-stationed-at-changzhou-du-shenyan-094",
       "file": "/audio/zh/on-a-walk-in-the-early-spring-harmonizing-a-poem-by-my-friend-lu-stationed-at-changzhou-du-shenyan-094.mp3",
-      "characters": 48,
-      "durationSeconds": 12.02,
-      "bytes": 193515
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 20,
+      "bytes": 321024
     },
     {
       "slug": "lines-shen-quanqi-095",
       "file": "/audio/zh/lines-shen-quanqi-095.mp3",
-      "characters": 48,
-      "durationSeconds": 11.88,
-      "bytes": 191007
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 17.36,
+      "bytes": 278784
     },
     {
       "slug": "inscribed-on-the-wall-of-an-inn-north-of-dayu-mountain-song-zhiwen-096",
       "file": "/audio/zh/inscribed-on-the-wall-of-an-inn-north-of-dayu-mountain-song-zhiwen-096.mp3",
-      "characters": 48,
-      "durationSeconds": 11.87,
-      "bytes": 191007
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 15.12,
+      "bytes": 242688
     },
     {
       "slug": "a-mooring-under-north-fort-hill-wang-wan-097",
       "file": "/audio/zh/a-mooring-under-north-fort-hill-wang-wan-097.mp3",
-      "characters": 48,
-      "durationSeconds": 12.18,
-      "bytes": 196022
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 20.96,
+      "bytes": 336384
     },
     {
       "slug": "a-buddhist-retreat-behind-broken-mountain-temple-chang-jian-098",
       "file": "/audio/zh/a-buddhist-retreat-behind-broken-mountain-temple-chang-jian-098.mp3",
-      "characters": 48,
-      "durationSeconds": 12.01,
-      "bytes": 193097
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 16,
+      "bytes": 256896
     },
     {
       "slug": "a-message-to-censor-du-fu-at-his-office-in-the-left-court-cen-can-099",
       "file": "/audio/zh/a-message-to-censor-du-fu-at-his-office-in-the-left-court-cen-can-099.mp3",
-      "characters": 48,
-      "durationSeconds": 11.93,
-      "bytes": 191843
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 16.24,
+      "bytes": 260736
     },
     {
       "slug": "a-message-to-meng-haoran-li-bai-100",
       "file": "/audio/zh/a-message-to-meng-haoran-li-bai-100.mp3",
-      "characters": 48,
-      "durationSeconds": 11.97,
-      "bytes": 192679
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 25.76,
+      "bytes": 413184
     },
     {
       "slug": "bidding-a-friend-farewell-at-jingmen-ferry-li-bai-101",
       "file": "/audio/zh/bidding-a-friend-farewell-at-jingmen-ferry-li-bai-101.mp3",
-      "characters": 48,
-      "durationSeconds": 12.01,
-      "bytes": 193097
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 16.88,
+      "bytes": 271104
     },
     {
       "slug": "a-farewell-to-a-friend-li-bai-102",
       "file": "/audio/zh/a-farewell-to-a-friend-li-bai-102.mp3",
-      "characters": 48,
-      "durationSeconds": 11.55,
-      "bytes": 185573
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 15.28,
+      "bytes": 245376
     },
     {
       "slug": "on-hearing-jun-the-buddhist-monk-from-shu-play-his-lute-li-bai-103",
       "file": "/audio/zh/on-hearing-jun-the-buddhist-monk-from-shu-play-his-lute-li-bai-103.mp3",
-      "characters": 48,
-      "durationSeconds": 11.59,
-      "bytes": 186409
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 16.16,
+      "bytes": 259584
     },
     {
       "slug": "thoughts-of-old-time-from-a-night-mooring-under-mount-niu-zhu-li-bai-104",
       "file": "/audio/zh/thoughts-of-old-time-from-a-night-mooring-under-mount-niu-zhu-li-bai-104.mp3",
-      "characters": 48,
-      "durationSeconds": 11.88,
-      "bytes": 191007
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 14.72,
+      "bytes": 236544
     },
     {
       "slug": "on-a-moonlight-night-du-fu-105",
       "file": "/audio/zh/on-a-moonlight-night-du-fu-105.mp3",
-      "characters": 48,
-      "durationSeconds": 11.87,
-      "bytes": 191007
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 40,
+      "durationSeconds": 19.68,
+      "bytes": 315648
     },
     {
       "slug": "a-spring-view-du-fu-106",
       "file": "/audio/zh/a-spring-view-du-fu-106.mp3",
-      "characters": 48,
-      "durationSeconds": 12.06,
-      "bytes": 193933
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 17.76,
+      "bytes": 284928
     },
     {
       "slug": "a-night-vigil-in-the-left-court-of-the-palace-du-fu-107",
       "file": "/audio/zh/a-night-vigil-in-the-left-court-of-the-palace-du-fu-107.mp3",
-      "characters": 48,
-      "durationSeconds": 11.68,
-      "bytes": 188081
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 19.68,
+      "bytes": 315648
     },
     {
       "slug": "taking-leave-of-friends-on-my-way-to-huazhou-du-fu-108",
       "file": "/audio/zh/taking-leave-of-friends-on-my-way-to-huazhou-du-fu-108.mp3",
-      "characters": 48,
-      "durationSeconds": 11.62,
-      "bytes": 186827
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 23.04,
+      "bytes": 369408
     },
     {
       "slug": "remembering-my-brothers-on-a-moonlight-night-du-fu-109",
       "file": "/audio/zh/remembering-my-brothers-on-a-moonlight-night-du-fu-109.mp3",
-      "characters": 48,
-      "durationSeconds": 11.83,
-      "bytes": 190171
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 15.04,
+      "bytes": 241536
     },
     {
       "slug": "to-li-bai-at-the-sky-send-du-fu-110",
       "file": "/audio/zh/to-li-bai-at-the-sky-send-du-fu-110.mp3",
-      "characters": 48,
-      "durationSeconds": 11.5,
-      "bytes": 185155
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 13.04,
+      "bytes": 209664
     },
     {
       "slug": "a-farewell-at-fengji-station-to-general-yan-du-fu-111",
       "file": "/audio/zh/a-farewell-at-fengji-station-to-general-yan-du-fu-111.mp3",
-      "characters": 48,
-      "durationSeconds": 12.03,
-      "bytes": 193515
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 14.16,
+      "bytes": 227328
     },
     {
       "slug": "on-leaving-the-tomb-of-premier-fang-du-fu-112",
       "file": "/audio/zh/on-leaving-the-tomb-of-premier-fang-du-fu-112.mp3",
-      "characters": 48,
-      "durationSeconds": 11.94,
-      "bytes": 191843
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 15.28,
+      "bytes": 245376
     },
     {
       "slug": "a-night-abroad-du-fu-113",
       "file": "/audio/zh/a-night-abroad-du-fu-113.mp3",
-      "characters": 48,
-      "durationSeconds": 12,
-      "bytes": 193097
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 24,
+      "bytes": 384768
     },
     {
       "slug": "on-the-gate-tower-at-youzhou-du-fu-114",
       "file": "/audio/zh/on-the-gate-tower-at-youzhou-du-fu-114.mp3",
-      "characters": 48,
-      "durationSeconds": 11.86,
-      "bytes": 190589
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 18.8,
+      "bytes": 301824
     },
     {
       "slug": "a-message-from-my-lodge-at-wangchuan-to-pei-di-wang-wei-115",
       "file": "/audio/zh/a-message-from-my-lodge-at-wangchuan-to-pei-di-wang-wei-115.mp3",
-      "characters": 48,
-      "durationSeconds": 12.05,
-      "bytes": 193933
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 16.4,
+      "bytes": 263424
     },
     {
       "slug": "bound-home-to-mount-song-wang-wei-117",
       "file": "/audio/zh/bound-home-to-mount-song-wang-wei-117.mp3",
-      "characters": 48,
-      "durationSeconds": 12.08,
-      "bytes": 194351
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 18.16,
+      "bytes": 291456
     },
     {
       "slug": "mount-zhongnan-wang-wei-118",
       "file": "/audio/zh/mount-zhongnan-wang-wei-118.mp3",
-      "characters": 48,
-      "durationSeconds": 11.74,
-      "bytes": 188917
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 13.92,
+      "bytes": 223488
     },
     {
       "slug": "answering-vice-prefect-zhang-wang-wei-119",
       "file": "/audio/zh/answering-vice-prefect-zhang-wang-wei-119.mp3",
-      "characters": 48,
-      "durationSeconds": 12.03,
-      "bytes": 193515
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 19.2,
+      "bytes": 307968
     },
     {
       "slug": "toward-the-temple-of-heaped-fragrance-wang-wei-120",
       "file": "/audio/zh/toward-the-temple-of-heaped-fragrance-wang-wei-120.mp3",
-      "characters": 48,
-      "durationSeconds": 11.8,
-      "bytes": 189753
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 14.4,
+      "bytes": 231168
     },
     {
       "slug": "a-message-to-commissioner-li-at-zizhou-wang-wei-121",
       "file": "/audio/zh/a-message-to-commissioner-li-at-zizhou-wang-wei-121.mp3",
-      "characters": 48,
-      "durationSeconds": 12.3,
-      "bytes": 197694
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 14.72,
+      "bytes": 236544
     },
     {
       "slug": "a-view-of-the-han-river-wang-wei-122",
       "file": "/audio/zh/a-view-of-the-han-river-wang-wei-122.mp3",
-      "characters": 48,
-      "durationSeconds": 12.01,
-      "bytes": 193097
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 14.72,
+      "bytes": 236544
     },
     {
       "slug": "my-retreat-at-mount-zhongnan-wang-wei-123",
       "file": "/audio/zh/my-retreat-at-mount-zhongnan-wang-wei-123.mp3",
-      "characters": 48,
-      "durationSeconds": 12.23,
-      "bytes": 196858
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 19.04,
+      "bytes": 305664
     },
     {
       "slug": "a-message-from-lake-dongtin-to-premier-zhang-meng-haoran-124",
       "file": "/audio/zh/a-message-from-lake-dongtin-to-premier-zhang-meng-haoran-124.mp3",
-      "characters": 48,
-      "durationSeconds": 12.02,
-      "bytes": 193515
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 20.24,
+      "bytes": 324864
     },
     {
       "slug": "on-climbing-yan-mountain-with-friends-meng-haoran-125",
       "file": "/audio/zh/on-climbing-yan-mountain-with-friends-meng-haoran-125.mp3",
-      "characters": 48,
-      "durationSeconds": 11.67,
-      "bytes": 187663
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 16.72,
+      "bytes": 268416
     },
     {
       "slug": "at-a-banquet-in-the-house-of-the-taoist-priest-mei-meng-haoran-126",
       "file": "/audio/zh/at-a-banquet-in-the-house-of-the-taoist-priest-mei-meng-haoran-126.mp3",
-      "characters": 48,
-      "durationSeconds": 12.21,
-      "bytes": 196440
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 40,
+      "durationSeconds": 17.52,
+      "bytes": 281088
     },
     {
       "slug": "on-returning-at-the-years-end-to-zhongnan-mountain-meng-haoran-127",
       "file": "/audio/zh/on-returning-at-the-years-end-to-zhongnan-mountain-meng-haoran-127.mp3",
-      "characters": 48,
-      "durationSeconds": 11.81,
-      "bytes": 189753
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 15.84,
+      "bytes": 254208
     },
     {
       "slug": "stopping-at-a-friends-farm-house-meng-haoran-128",
       "file": "/audio/zh/stopping-at-a-friends-farm-house-meng-haoran-128.mp3",
-      "characters": 48,
-      "durationSeconds": 11.78,
-      "bytes": 189753
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 14.96,
+      "bytes": 240384
     },
     {
       "slug": "from-qin-country-to-the-buddhist-priest-yuan-meng-haoran-129",
       "file": "/audio/zh/from-qin-country-to-the-buddhist-priest-yuan-meng-haoran-129.mp3",
-      "characters": 48,
-      "durationSeconds": 11.66,
-      "bytes": 187663
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 20.08,
+      "bytes": 322176
     },
     {
       "slug": "from-a-mooring-on-the-tonglu-to-a-friend-in-yangzhou-meng-haoran-130",
       "file": "/audio/zh/from-a-mooring-on-the-tonglu-to-a-friend-in-yangzhou-meng-haoran-130.mp3",
-      "characters": 48,
-      "durationSeconds": 11.6,
-      "bytes": 186827
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 18.4,
+      "bytes": 295296
     },
     {
       "slug": "taking-leave-of-wang-wei-meng-haoran-131",
       "file": "/audio/zh/taking-leave-of-wang-wei-meng-haoran-131.mp3",
-      "characters": 48,
-      "durationSeconds": 11.67,
-      "bytes": 187663
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 17.68,
+      "bytes": 283776
     },
     {
       "slug": "memories-in-early-winter-meng-haoran-132",
       "file": "/audio/zh/memories-in-early-winter-meng-haoran-132.mp3",
-      "characters": 48,
-      "durationSeconds": 11.72,
-      "bytes": 188499
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 18.8,
+      "bytes": 301824
     },
     {
       "slug": "climbing-in-autumn-for-a-view-from-the-temple-on-the-terrace-of-general-wu-liu-changqing-133",
       "file": "/audio/zh/climbing-in-autumn-for-a-view-from-the-temple-on-the-terrace-of-general-wu-liu-changqing-133.mp3",
-      "characters": 48,
-      "durationSeconds": 11.93,
-      "bytes": 191843
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 21.12,
+      "bytes": 338688
     },
     {
       "slug": "a-farewell-to-governor-li-on-his-way-home-to-hanyang-liu-chanqing-134",
       "file": "/audio/zh/a-farewell-to-governor-li-on-his-way-home-to-hanyang-liu-chanqing-134.mp3",
-      "characters": 48,
-      "durationSeconds": 11.81,
-      "bytes": 190171
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 13.52,
+      "bytes": 217344
     },
     {
       "slug": "on-seeing-wang-leave-for-the-south-liu-changing-135",
       "file": "/audio/zh/on-seeing-wang-leave-for-the-south-liu-changing-135.mp3",
-      "characters": 48,
-      "durationSeconds": 12.36,
-      "bytes": 198948
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 23.6,
+      "bytes": 378624
     },
     {
       "slug": "while-visiting-on-the-south-stream-the-taoist-priest-chang-liu-changing-136",
       "file": "/audio/zh/while-visiting-on-the-south-stream-the-taoist-priest-chang-liu-changing-136.mp3",
-      "characters": 48,
-      "durationSeconds": 11.95,
-      "bytes": 192261
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 20.64,
+      "bytes": 331008
     },
     {
       "slug": "new-years-at-changsha-liu-changqing-137",
       "file": "/audio/zh/new-years-at-changsha-liu-changqing-137.mp3",
-      "characters": 48,
-      "durationSeconds": 12.33,
-      "bytes": 198530
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 19.76,
+      "bytes": 317184
     },
     {
       "slug": "farewell-to-a-japanese-buddhist-priest-bound-homeward-qian-qi-138",
       "file": "/audio/zh/farewell-to-a-japanese-buddhist-priest-bound-homeward-qian-qi-138.mp3",
-      "characters": 48,
-      "durationSeconds": 12.19,
-      "bytes": 196022
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 20.16,
+      "bytes": 323328
     },
     {
       "slug": "from-my-study-at-the-mouth-of-the-valley-a-message-to-censor-yang-qian-qi-139",
       "file": "/audio/zh/from-my-study-at-the-mouth-of-the-valley-a-message-to-censor-yang-qian-qi-139.mp3",
-      "characters": 48,
-      "durationSeconds": 12.27,
-      "bytes": 197276
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 23.6,
+      "bytes": 378624
     },
     {
       "slug": "a-greeting-on-the-huai-river-to-my-old-friends-from-liangchuan-wei-yingwu-140",
       "file": "/audio/zh/a-greeting-on-the-huai-river-to-my-old-friends-from-liangchuan-wei-yingwu-140.mp3",
-      "characters": 48,
-      "durationSeconds": 12.33,
-      "bytes": 198530
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 16.64,
+      "bytes": 267264
     },
     {
       "slug": "a-farewell-in-the-evening-rain-to-li-cao-wei-yingwu-141",
       "file": "/audio/zh/a-farewell-in-the-evening-rain-to-li-cao-wei-yingwu-141.mp3",
-      "characters": 48,
-      "durationSeconds": 11.79,
-      "bytes": 189753
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 17.84,
+      "bytes": 286464
     },
     {
       "slug": "an-autumn-evening-harmonizing-cheng-qins-poem-han-hong-142",
       "file": "/audio/zh/an-autumn-evening-harmonizing-cheng-qins-poem-han-hong-142.mp3",
-      "characters": 48,
-      "durationSeconds": 11.76,
-      "bytes": 189335
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 17.2,
+      "bytes": 276096
     },
     {
       "slug": "a-poem-liu-jixu-143",
       "file": "/audio/zh/a-poem-liu-jixu-143.mp3",
-      "characters": 48,
-      "durationSeconds": 11.79,
-      "bytes": 189753
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 14.56,
+      "bytes": 233856
     },
     {
       "slug": "changing-on-old-friends-in-a-village-inn-dai-shulun-144",
       "file": "/audio/zh/changing-on-old-friends-in-a-village-inn-dai-shulun-144.mp3",
-      "characters": 48,
-      "durationSeconds": 12.24,
-      "bytes": 196858
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 20.56,
+      "bytes": 329856
     },
     {
       "slug": "a-farewell-to-li-duan-lu-lun-145",
       "file": "/audio/zh/a-farewell-to-li-duan-lu-lun-145.mp3",
-      "characters": 48,
-      "durationSeconds": 12.11,
-      "bytes": 194769
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 21.84,
+      "bytes": 350208
     },
     {
       "slug": "a-brief-but-happy-meeting-with-my-brother-in-law-meeting-by-accident-only-to-part-li-yi-146",
       "file": "/audio/zh/a-brief-but-happy-meeting-with-my-brother-in-law-meeting-by-accident-only-to-part-li-yi-146.mp3",
-      "characters": 48,
-      "durationSeconds": 11.74,
-      "bytes": 188917
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 18.4,
+      "bytes": 295296
     },
     {
       "slug": "a-farewell-to-han-shen-at-the-yunyang-inn-sikong-shu-147",
       "file": "/audio/zh/a-farewell-to-han-shen-at-the-yunyang-inn-sikong-shu-147.mp3",
-      "characters": 48,
-      "durationSeconds": 11.64,
-      "bytes": 187245
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 19.68,
+      "bytes": 315648
     },
     {
       "slug": "when-lu-lun-my-cousin-comes-for-the-night-sikong-shu-148",
       "file": "/audio/zh/when-lu-lun-my-cousin-comes-for-the-night-sikong-shu-148.mp3",
-      "characters": 48,
-      "durationSeconds": 12.16,
-      "bytes": 195604
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 40,
+      "durationSeconds": 19.52,
+      "bytes": 313344
     },
     {
       "slug": "to-a-friend-bound-north-after-the-rebellion-sikiong-shu-149",
       "file": "/audio/zh/to-a-friend-bound-north-after-the-rebellion-sikiong-shu-149.mp3",
-      "characters": 48,
-      "durationSeconds": 12.41,
-      "bytes": 199784
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 21.84,
+      "bytes": 350208
     },
     {
       "slug": "in-the-temple-of-the-first-king-of-shu-liu-yuxi-150",
       "file": "/audio/zh/in-the-temple-of-the-first-king-of-shu-liu-yuxi-150.mp3",
-      "characters": 48,
-      "durationSeconds": 11.96,
-      "bytes": 192261
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 17.52,
+      "bytes": 281088
     },
     {
       "slug": "thinking-of-a-friend-lost-in-the-tibetan-war-zhang-ji-151",
       "file": "/audio/zh/thinking-of-a-friend-lost-in-the-tibetan-war-zhang-ji-151.mp3",
-      "characters": 48,
-      "durationSeconds": 12.2,
-      "bytes": 196022
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 15.68,
+      "bytes": 251904
     },
     {
       "slug": "grasses-bai-juyi-152",
       "file": "/audio/zh/grasses-bai-juyi-152.mp3",
-      "characters": 48,
-      "durationSeconds": 11.88,
-      "bytes": 191007
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 16.56,
+      "bytes": 265728
     },
     {
       "slug": "a-night-at-a-tavern-du-mu-153",
       "file": "/audio/zh/a-night-at-a-tavern-du-mu-153.mp3",
-      "characters": 48,
-      "durationSeconds": 12.26,
-      "bytes": 197276
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 16.24,
+      "bytes": 260736
     },
     {
       "slug": "inscribed-in-the-inn-at-tong-gate-on-an-autumn-trip-to-the-capital-xu-hun-154",
       "file": "/audio/zh/inscribed-in-the-inn-at-tong-gate-on-an-autumn-trip-to-the-capital-xu-hun-154.mp3",
-      "characters": 48,
-      "durationSeconds": 11.96,
-      "bytes": 192261
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 26.48,
+      "bytes": 424704
     },
     {
       "slug": "early-autumn-xu-hun-155",
       "file": "/audio/zh/early-autumn-xu-hun-155.mp3",
-      "characters": 48,
-      "durationSeconds": 11.72,
-      "bytes": 188499
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 40,
+      "durationSeconds": 17.04,
+      "bytes": 273408
     },
     {
       "slug": "a-cicada-li-shangyin-156",
       "file": "/audio/zh/a-cicada-li-shangyin-156.mp3",
-      "characters": 48,
-      "durationSeconds": 11.46,
-      "bytes": 184320
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 40,
+      "durationSeconds": 20.4,
+      "bytes": 327168
     },
     {
       "slug": "wind-and-rain-li-shangyin-157",
       "file": "/audio/zh/wind-and-rain-li-shangyin-157.mp3",
-      "characters": 48,
-      "durationSeconds": 12.58,
-      "bytes": 202292
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 14.16,
+      "bytes": 227328
     },
     {
       "slug": "falling-petals-li-shangyin-158",
       "file": "/audio/zh/falling-petals-li-shangyin-158.mp3",
-      "characters": 48,
-      "durationSeconds": 12.18,
-      "bytes": 196022
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 23.52,
+      "bytes": 377088
     },
     {
       "slug": "thoughts-in-the-cold-li-shangyin-159",
       "file": "/audio/zh/thoughts-in-the-cold-li-shangyin-159.mp3",
-      "characters": 48,
-      "durationSeconds": 11.72,
-      "bytes": 188499
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 17.44,
+      "bytes": 279936
     },
     {
       "slug": "north-among-green-vines-li-shangyin-160",
       "file": "/audio/zh/north-among-green-vines-li-shangyin-160.mp3",
-      "characters": 48,
-      "durationSeconds": 11.59,
-      "bytes": 186409
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 40,
+      "durationSeconds": 20.56,
+      "bytes": 329856
     },
     {
       "slug": "to-a-friend-bound-east-wen-tingyun-161",
       "file": "/audio/zh/to-a-friend-bound-east-wen-tingyun-161.mp3",
-      "characters": 48,
-      "durationSeconds": 11.7,
-      "bytes": 188081
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 19.04,
+      "bytes": 305664
     },
     {
       "slug": "an-autumn-cottage-at-bashang-ma-dai-162",
       "file": "/audio/zh/an-autumn-cottage-at-bashang-ma-dai-162.mp3",
-      "characters": 48,
-      "durationSeconds": 11.83,
-      "bytes": 190171
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 40,
+      "durationSeconds": 21.92,
+      "bytes": 351744
     },
     {
       "slug": "thoughts-of-old-time-on-the-chu-river-ma-dai-163",
       "file": "/audio/zh/thoughts-of-old-time-on-the-chu-river-ma-dai-163.mp3",
-      "characters": 48,
-      "durationSeconds": 12.01,
-      "bytes": 193097
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 40,
+      "durationSeconds": 14.96,
+      "bytes": 240384
     },
     {
       "slug": "on-the-border-zhang-qiao-164",
       "file": "/audio/zh/on-the-border-zhang-qiao-164.mp3",
-      "characters": 48,
-      "durationSeconds": 12.1,
-      "bytes": 194769
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 17.2,
+      "bytes": 276096
     },
     {
       "slug": "on-new-years-eve-cui-tu-165",
       "file": "/audio/zh/on-new-years-eve-cui-tu-165.mp3",
-      "characters": 48,
-      "durationSeconds": 11.9,
-      "bytes": 191425
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 40,
+      "durationSeconds": 17.84,
+      "bytes": 286464
     },
     {
       "slug": "a-solitary-wildgoose-cui-tu-166",
       "file": "/audio/zh/a-solitary-wildgoose-cui-tu-166.mp3",
-      "characters": 48,
-      "durationSeconds": 11.57,
-      "bytes": 185991
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 40,
+      "durationSeconds": 15.36,
+      "bytes": 246528
     },
     {
       "slug": "a-sigh-in-the-spring-palace-du-xunhe-167",
       "file": "/audio/zh/a-sigh-in-the-spring-palace-du-xunhe-167.mp3",
-      "characters": 48,
-      "durationSeconds": 11.99,
-      "bytes": 192679
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 40,
+      "durationSeconds": 21.92,
+      "bytes": 351744
     },
     {
       "slug": "a-night-thought-on-terrace-tower-wei-zhuang-168",
       "file": "/audio/zh/a-night-thought-on-terrace-tower-wei-zhuang-168.mp3",
-      "characters": 48,
-      "durationSeconds": 11.77,
-      "bytes": 189335
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 40,
+      "durationSeconds": 18.72,
+      "bytes": 300288
     },
     {
       "slug": "not-finding-lu-hongxian-at-home-seng-jiaoran-169",
       "file": "/audio/zh/not-finding-lu-hongxian-at-home-seng-jiaoran-169.mp3",
-      "characters": 48,
-      "durationSeconds": 11.52,
-      "bytes": 185573
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 40,
+      "durationSeconds": 14.48,
+      "bytes": 232704
     },
     {
       "slug": "passing-through-huayin-cui-hao-171",
       "file": "/audio/zh/passing-through-huayin-cui-hao-171.mp3",
-      "characters": 64,
-      "durationSeconds": 16.15,
-      "bytes": 259552
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 23.04,
+      "bytes": 369408
     },
     {
       "slug": "looking-toward-an-inner-gate-of-the-great-wall-zu-yong-172",
       "file": "/audio/zh/looking-toward-an-inner-gate-of-the-great-wall-zu-yong-172.mp3",
-      "characters": 64,
-      "durationSeconds": 16.27,
-      "bytes": 261224
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 24.08,
+      "bytes": 386304
     },
     {
       "slug": "a-farewell-to-wei-wan-li-qi-173",
       "file": "/audio/zh/a-farewell-to-wei-wan-li-qi-173.mp3",
-      "characters": 64,
-      "durationSeconds": 15.38,
-      "bytes": 247013
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 56,
+      "durationSeconds": 23.92,
+      "bytes": 383616
     },
     {
       "slug": "a-climb-on-the-mountain-holiday-to-the-terrace-whence-one-sees-the-magician-a-poem-sent-to-vice-prefect-lu-cui-shu-174",
       "file": "/audio/zh/a-climb-on-the-mountain-holiday-to-the-terrace-whence-one-sees-the-magician-a-poem-sent-to-vice-prefect-lu-cui-shu-174.mp3",
-      "characters": 64,
-      "durationSeconds": 15.59,
-      "bytes": 250357
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 29.76,
+      "bytes": 476928
     },
     {
       "slug": "on-climbing-in-nanjing-to-the-terrace-of-phoenixes-li-bai-175",
       "file": "/audio/zh/on-climbing-in-nanjing-to-the-terrace-of-phoenixes-li-bai-175.mp3",
-      "characters": 64,
-      "durationSeconds": 15.71,
-      "bytes": 252447
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 38.32,
+      "bytes": 614016
     },
     {
       "slug": "to-vice-prefects-li-and-wang-degraded-and-transferred-to-xiazhong-and-changsha-gao-shi-176",
       "file": "/audio/zh/to-vice-prefects-li-and-wang-degraded-and-transferred-to-xiazhong-and-changsha-gao-shi-176.mp3",
-      "characters": 64,
-      "durationSeconds": 15.47,
-      "bytes": 248685
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 56,
+      "durationSeconds": 32.24,
+      "bytes": 516864
     },
     {
       "slug": "an-early-audience-at-the-palace-of-light-harmonizing-secretary-jia-zhis-poem-cen-can-177",
       "file": "/audio/zh/an-early-audience-at-the-palace-of-light-harmonizing-secretary-jia-zhis-poem-cen-can-177.mp3",
-      "characters": 64,
-      "durationSeconds": 16,
-      "bytes": 257044
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.8,
+      "bytes": 365568
     },
     {
       "slug": "an-early-audience-at-the-palace-of-light-harmonizing-secretary-jia-zhi-poem-wang-wei-178",
       "file": "/audio/zh/an-early-audience-at-the-palace-of-light-harmonizing-secretary-jia-zhi-poem-wang-wei-178.mp3",
-      "characters": 64,
-      "durationSeconds": 15.98,
-      "bytes": 256626
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 31.28,
+      "bytes": 501504
     },
     {
       "slug": "looking-down-in-a-spring-rain-on-the-course-from-fairy-mountain-palace-to-the-pavilion-of-increase-harmonizing-the-emperors-poem-wang-wei-179",
       "file": "/audio/zh/looking-down-in-a-spring-rain-on-the-course-from-fairy-mountain-palace-to-the-pavilion-of-increase-harmonizing-the-emperors-poem-wang-wei-179.mp3",
-      "characters": 64,
-      "durationSeconds": 15.75,
-      "bytes": 252865
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 21.68,
+      "bytes": 347904
     },
     {
       "slug": "in-my-lodge-at-wang-chuan-after-a-long-rain-wang-wei-180",
       "file": "/audio/zh/in-my-lodge-at-wang-chuan-after-a-long-rain-wang-wei-180.mp3",
-      "characters": 64,
-      "durationSeconds": 15.45,
-      "bytes": 248267
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 38.24,
+      "bytes": 612864
     },
     {
       "slug": "harmonizing-a-poem-by-palace-attendant-guo-wang-wei-181",
       "file": "/audio/zh/harmonizing-a-poem-by-palace-attendant-guo-wang-wei-181.mp3",
-      "characters": 64,
-      "durationSeconds": 15.39,
-      "bytes": 247431
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 56,
+      "durationSeconds": 27.36,
+      "bytes": 438528
     },
     {
       "slug": "the-temple-of-the-premier-of-shu-du-fu-182",
       "file": "/audio/zh/the-temple-of-the-premier-of-shu-du-fu-182.mp3",
-      "characters": 64,
-      "durationSeconds": 16.16,
-      "bytes": 259552
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 23.84,
+      "bytes": 382464
     },
     {
       "slug": "a-hearty-welcome-to-vice-prefect-cui-du-fu-183",
       "file": "/audio/zh/a-hearty-welcome-to-vice-prefect-cui-du-fu-183.mp3",
-      "characters": 64,
-      "durationSeconds": 15.84,
-      "bytes": 254537
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 25.04,
+      "bytes": 401664
     },
     {
       "slug": "a-view-of-the-wilderness-du-fu-184",
       "file": "/audio/zh/a-view-of-the-wilderness-du-fu-184.mp3",
-      "characters": 64,
-      "durationSeconds": 15.59,
-      "bytes": 250357
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.72,
+      "bytes": 364416
     },
     {
       "slug": "both-sides-of-the-yellow-river-recaptured-by-the-imperial-army-du-fu-185",
       "file": "/audio/zh/both-sides-of-the-yellow-river-recaptured-by-the-imperial-army-du-fu-185.mp3",
-      "characters": 64,
-      "durationSeconds": 15.84,
-      "bytes": 254537
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 25.04,
+      "bytes": 401664
     },
     {
       "slug": "from-an-upper-story-du-fu-187",
       "file": "/audio/zh/from-an-upper-story-du-fu-187.mp3",
-      "characters": 64,
-      "durationSeconds": 15.63,
-      "bytes": 251193
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 24.08,
+      "bytes": 386304
     },
     {
       "slug": "staying-at-the-generals-headquarters-du-fu-188",
       "file": "/audio/zh/staying-at-the-generals-headquarters-du-fu-188.mp3",
-      "characters": 64,
-      "durationSeconds": 15.75,
-      "bytes": 252865
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 23.84,
+      "bytes": 382464
     },
     {
       "slug": "night-in-the-watch-tower-du-fu-189",
       "file": "/audio/zh/night-in-the-watch-tower-du-fu-189.mp3",
-      "characters": 64,
-      "durationSeconds": 15.69,
-      "bytes": 252029
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.16,
+      "bytes": 355584
     },
     {
       "slug": "thoughts-of-old-time-iii-du-fu-192",
       "file": "/audio/zh/thoughts-of-old-time-iii-du-fu-192.mp3",
-      "characters": 64,
-      "durationSeconds": 16.47,
-      "bytes": 264568
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 56,
+      "durationSeconds": 29.2,
+      "bytes": 468096
     },
     {
       "slug": "thoughts-of-old-time-v-du-fu-194",
       "file": "/audio/zh/thoughts-of-old-time-v-du-fu-194.mp3",
-      "characters": 64,
-      "durationSeconds": 15.07,
-      "bytes": 241998
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.48,
+      "bytes": 360576
     },
     {
       "slug": "on-leaving-guijiang-again-to-xue-and-liu-liu-changquing-195",
       "file": "/audio/zh/on-leaving-guijiang-again-to-xue-and-liu-liu-changquing-195.mp3",
-      "characters": 64,
-      "durationSeconds": 15.35,
-      "bytes": 246595
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 26.16,
+      "bytes": 419328
     },
     {
       "slug": "on-passing-jia-yis-house-in-changsha-liu-changqing-196",
       "file": "/audio/zh/on-passing-jia-yis-house-in-changsha-liu-changqing-196.mp3",
-      "characters": 64,
-      "durationSeconds": 15.9,
-      "bytes": 255373
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 35.12,
+      "bytes": 562944
     },
     {
       "slug": "an-evening-view-of-the-city-of-youzhou-after-coming-from-hankou-to-parrot-island-a-poem-sent-to-my-friend-governor-yuan-liu-changqing-197",
       "file": "/audio/zh/an-evening-view-of-the-city-of-youzhou-after-coming-from-hankou-to-parrot-island-a-poem-sent-to-my-friend-governor-yuan-liu-changqing-197.mp3",
-      "characters": 64,
-      "durationSeconds": 15.96,
-      "bytes": 256209
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.88,
+      "bytes": 367104
     },
     {
       "slug": "to-my-friend-at-the-capital-secretary-pei-qian-qi-198",
       "file": "/audio/zh/to-my-friend-at-the-capital-secretary-pei-qian-qi-198.mp3",
-      "characters": 64,
-      "durationSeconds": 16.07,
-      "bytes": 258298
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 56,
+      "durationSeconds": 17.68,
+      "bytes": 283776
     },
     {
       "slug": "to-my-friends-li-dan-and-yuanxi-wei-yingwu-199",
       "file": "/audio/zh/to-my-friends-li-dan-and-yuanxi-wei-yingwu-199.mp3",
-      "characters": 64,
-      "durationSeconds": 15.54,
-      "bytes": 249521
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 56,
+      "durationSeconds": 24.8,
+      "bytes": 397824
     },
     {
       "slug": "inscribed-in-the-temple-of-the-wandering-genie-han-hong-200",
       "file": "/audio/zh/inscribed-in-the-temple-of-the-wandering-genie-han-hong-200.mp3",
-      "characters": 64,
-      "durationSeconds": 16.25,
-      "bytes": 260806
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 56,
+      "durationSeconds": 32.96,
+      "bytes": 528384
     },
     {
       "slug": "spring-thoughts-huangfu-ran-201",
       "file": "/audio/zh/spring-thoughts-huangfu-ran-201.mp3",
-      "characters": 64,
-      "durationSeconds": 16,
-      "bytes": 257044
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 19.92,
+      "bytes": 319488
     },
     {
       "slug": "a-night-mooring-at-wuchang-lu-lun-202",
       "file": "/audio/zh/a-night-mooring-at-wuchang-lu-lun-202.mp3",
-      "characters": 64,
-      "durationSeconds": 15.77,
-      "bytes": 253283
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 22.4,
+      "bytes": 359424
     },
     {
       "slug": "from-the-city-tower-of-liuzhou-to-my-four-fellow-officials-at-zhang-ding-feng-and-lian-districts-liu-zongyuan-203",
       "file": "/audio/zh/from-the-city-tower-of-liuzhou-to-my-four-fellow-officials-at-zhang-ding-feng-and-lian-districts-liu-zongyuan-203.mp3",
-      "characters": 64,
-      "durationSeconds": 15.48,
-      "bytes": 248685
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 26.88,
+      "bytes": 430848
     },
     {
       "slug": "thoughts-of-old-time-at-west-fort-mountain-liu-yuxi-204",
       "file": "/audio/zh/thoughts-of-old-time-at-west-fort-mountain-liu-yuxi-204.mp3",
-      "characters": 64,
-      "durationSeconds": 15.84,
-      "bytes": 254537
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 20.8,
+      "bytes": 333696
     },
     {
       "slug": "an-elegy-i-yuan-zhen-205",
       "file": "/audio/zh/an-elegy-i-yuan-zhen-205.mp3",
-      "characters": 64,
-      "durationSeconds": 15.68,
-      "bytes": 252029
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 17.36,
+      "bytes": 278784
     },
     {
       "slug": "an-elegy-ii-yuan-zhen-206",
       "file": "/audio/zh/an-elegy-ii-yuan-zhen-206.mp3",
-      "characters": 64,
-      "durationSeconds": 15.99,
-      "bytes": 257044
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 56,
+      "durationSeconds": 32,
+      "bytes": 513024
     },
     {
       "slug": "an-elegy-iii-yuan-zhen-207",
       "file": "/audio/zh/an-elegy-iii-yuan-zhen-207.mp3",
-      "characters": 64,
-      "durationSeconds": 15.28,
-      "bytes": 245342
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 56,
+      "durationSeconds": 32.16,
+      "bytes": 515328
     },
     {
       "slug": "to-my-brothers-and-sisters-adrift-in-troubled-times-this-poem-of-the-moon-bai-juyi-208",
       "file": "/audio/zh/to-my-brothers-and-sisters-adrift-in-troubled-times-this-poem-of-the-moon-bai-juyi-208.mp3",
-      "characters": 64,
-      "durationSeconds": 15.42,
-      "bytes": 247849
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 56,
+      "durationSeconds": 26.64,
+      "bytes": 427008
     },
     {
       "slug": "to-one-unnamed-li-shangyin-210",
       "file": "/audio/zh/to-one-unnamed-li-shangyin-210.mp3",
-      "characters": 64,
-      "durationSeconds": 15.82,
-      "bytes": 254119
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 26,
+      "bytes": 417024
     },
     {
       "slug": "the-palace-of-the-sui-emperor-li-shangyin-211",
       "file": "/audio/zh/the-palace-of-the-sui-emperor-li-shangyin-211.mp3",
-      "characters": 64,
-      "durationSeconds": 15.59,
-      "bytes": 250357
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 29.36,
+      "bytes": 470784
     },
     {
       "slug": "to-one-unnamed-i-li-shangyin-212",
       "file": "/audio/zh/to-one-unnamed-i-li-shangyin-212.mp3",
-      "characters": 64,
-      "durationSeconds": 15.62,
-      "bytes": 250775
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 24.08,
+      "bytes": 386304
     },
     {
       "slug": "to-one-unnamed-ii-li-shangyin-213",
       "file": "/audio/zh/to-one-unnamed-ii-li-shangyin-213.mp3",
-      "characters": 64,
-      "durationSeconds": 15.74,
-      "bytes": 252865
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 56,
+      "durationSeconds": 23.44,
+      "bytes": 375936
     },
     {
       "slug": "in-the-camp-of-the-sketching-brush-li-shangyin-214",
       "file": "/audio/zh/in-the-camp-of-the-sketching-brush-li-shangyin-214.mp3",
-      "characters": 64,
-      "durationSeconds": 15.5,
-      "bytes": 249103
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 56,
+      "durationSeconds": 19.6,
+      "bytes": 314496
     },
     {
       "slug": "to-one-unnamed-iii-li-shangyin-215",
       "file": "/audio/zh/to-one-unnamed-iii-li-shangyin-215.mp3",
-      "characters": 64,
-      "durationSeconds": 15.98,
-      "bytes": 256626
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 56,
+      "durationSeconds": 31.04,
+      "bytes": 497664
     },
     {
       "slug": "spring-rain-li-shangyin-216",
       "file": "/audio/zh/spring-rain-li-shangyin-216.mp3",
-      "characters": 64,
-      "durationSeconds": 14.79,
-      "bytes": 237818
+      "voice": "Vivian",
+      "reason": "Content and longing mood profile",
+      "characters": 56,
+      "durationSeconds": 39.92,
+      "bytes": 639744
     },
     {
       "slug": "to-one-unnamed-iv-li-shangyin-217",
       "file": "/audio/zh/to-one-unnamed-iv-li-shangyin-217.mp3",
-      "characters": 64,
-      "durationSeconds": 15.61,
-      "bytes": 250775
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 23.76,
+      "bytes": 380928
     },
     {
       "slug": "to-one-unnamed-v-li-shangyin-218",
       "file": "/audio/zh/to-one-unnamed-v-li-shangyin-218.mp3",
-      "characters": 64,
-      "durationSeconds": 15.53,
-      "bytes": 249521
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 56,
+      "durationSeconds": 24.32,
+      "bytes": 390144
     },
     {
       "slug": "near-the-lizhou-ferry-wen-tingyun-219",
       "file": "/audio/zh/near-the-lizhou-ferry-wen-tingyun-219.mp3",
-      "characters": 64,
-      "durationSeconds": 15.9,
-      "bytes": 255373
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 28.4,
+      "bytes": 455424
     },
     {
       "slug": "the-temple-of-su-wu-wen-tingyun-220",
       "file": "/audio/zh/the-temple-of-su-wu-wen-tingyun-220.mp3",
-      "characters": 64,
-      "durationSeconds": 16.12,
-      "bytes": 258716
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 23.84,
+      "bytes": 382464
     },
     {
       "slug": "a-palace-poem-xue-feng-221",
       "file": "/audio/zh/a-palace-poem-xue-feng-221.mp3",
-      "characters": 64,
-      "durationSeconds": 16.08,
-      "bytes": 258298
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 56,
+      "durationSeconds": 24.56,
+      "bytes": 393984
     },
     {
       "slug": "a-poor-girl-qin-taoyu-222",
       "file": "/audio/zh/a-poor-girl-qin-taoyu-222.mp3",
-      "characters": 64,
-      "durationSeconds": 15.44,
-      "bytes": 248267
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 56,
+      "durationSeconds": 21.12,
+      "bytes": 338688
     },
     {
       "slug": "beyond-seeing-shen-quanqi-223",
       "file": "/audio/zh/beyond-seeing-shen-quanqi-223.mp3",
-      "characters": 64,
-      "durationSeconds": 15.62,
-      "bytes": 250775
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 56,
+      "durationSeconds": 20.08,
+      "bytes": 322176
     },
     {
       "slug": "in-a-retreat-among-bamboos-wang-wei-225",
       "file": "/audio/zh/in-a-retreat-among-bamboos-wang-wei-225.mp3",
-      "characters": 24,
-      "durationSeconds": 5.64,
-      "bytes": 91115
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 20,
+      "durationSeconds": 7.28,
+      "bytes": 117504
     },
     {
       "slug": "a-parting-wang-wei-226",
       "file": "/audio/zh/a-parting-wang-wei-226.mp3",
-      "characters": 24,
-      "durationSeconds": 5.71,
-      "bytes": 92369
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 20,
+      "durationSeconds": 11.04,
+      "bytes": 177408
     },
     {
       "slug": "one-hearted-wang-wei-227",
       "file": "/audio/zh/one-hearted-wang-wei-227.mp3",
-      "characters": 24,
-      "durationSeconds": 5.76,
-      "bytes": 93204
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 11.6,
+      "bytes": 186624
     },
     {
       "slug": "lines-wang-wei-228",
       "file": "/audio/zh/lines-wang-wei-228.mp3",
-      "characters": 24,
-      "durationSeconds": 5.89,
-      "bytes": 95294
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 20,
+      "durationSeconds": 8.8,
+      "bytes": 141696
     },
     {
       "slug": "a-farewell-to-cui-pei-di-229",
       "file": "/audio/zh/a-farewell-to-cui-pei-di-229.mp3",
-      "characters": 24,
-      "durationSeconds": 5.76,
-      "bytes": 93204
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 20,
+      "durationSeconds": 6.64,
+      "bytes": 107136
     },
     {
       "slug": "a-night-mooring-on-the-jiande-river-meng-haoran-231",
       "file": "/audio/zh/a-night-mooring-on-the-jiande-river-meng-haoran-231.mp3",
-      "characters": 24,
-      "durationSeconds": 5.79,
-      "bytes": 93622
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 20,
+      "durationSeconds": 7.76,
+      "bytes": 125184
     },
     {
       "slug": "in-the-quiet-night-li-bai-233",
       "file": "/audio/zh/in-the-quiet-night-li-bai-233.mp3",
-      "characters": 24,
-      "durationSeconds": 5.77,
-      "bytes": 93204
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 8.4,
+      "bytes": 135168
     },
     {
       "slug": "a-bitter-love-li-bai-234",
       "file": "/audio/zh/a-bitter-love-li-bai-234.mp3",
-      "characters": 24,
-      "durationSeconds": 5.83,
-      "bytes": 94458
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 6.72,
+      "bytes": 108288
     },
     {
       "slug": "the-eight-sided-fortress-du-fu-235",
       "file": "/audio/zh/the-eight-sided-fortress-du-fu-235.mp3",
-      "characters": 24,
-      "durationSeconds": 5.76,
-      "bytes": 93204
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 20,
+      "durationSeconds": 7.92,
+      "bytes": 127488
     },
     {
       "slug": "on-parting-with-the-buddhist-pilgrim-ling-che-liu-changqing-237",
       "file": "/audio/zh/on-parting-with-the-buddhist-pilgrim-ling-che-liu-changqing-237.mp3",
-      "characters": 24,
-      "durationSeconds": 5.73,
-      "bytes": 92786
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 9.44,
+      "bytes": 152064
     },
     {
       "slug": "on-hearing-a-lute-player-liu-changqing-238",
       "file": "/audio/zh/on-hearing-a-lute-player-liu-changqing-238.mp3",
-      "characters": 24,
-      "durationSeconds": 5.87,
-      "bytes": 94876
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 8.16,
+      "bytes": 131328
     },
     {
       "slug": "farewell-to-a-buddhist-monk-liu-changqing-239",
       "file": "/audio/zh/farewell-to-a-buddhist-monk-liu-changqing-239.mp3",
-      "characters": 24,
-      "durationSeconds": 5.53,
-      "bytes": 89443
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 7.68,
+      "bytes": 123648
     },
     {
       "slug": "an-autumn-night-message-to-qiu-wei-yingwu-240",
       "file": "/audio/zh/an-autumn-night-message-to-qiu-wei-yingwu-240.mp3",
-      "characters": 24,
-      "durationSeconds": 5.97,
-      "bytes": 96548
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 10.48,
+      "bytes": 168576
     },
     {
       "slug": "on-hearing-her-play-the-harp-li-duan-241",
       "file": "/audio/zh/on-hearing-her-play-the-harp-li-duan-241.mp3",
-      "characters": 24,
-      "durationSeconds": 5.75,
-      "bytes": 93204
+      "voice": "Uncle_Fu",
+      "reason": "Content and courage mood profile",
+      "characters": 20,
+      "durationSeconds": 9.36,
+      "bytes": 150528
     },
     {
       "slug": "a-bride-wang-jian-242",
       "file": "/audio/zh/a-bride-wang-jian-242.mp3",
-      "characters": 24,
-      "durationSeconds": 6.07,
-      "bytes": 98220
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 20,
+      "durationSeconds": 8,
+      "bytes": 129024
     },
     {
       "slug": "the-jade-dressing-table-quan-deyu-243",
       "file": "/audio/zh/the-jade-dressing-table-quan-deyu-243.mp3",
-      "characters": 24,
-      "durationSeconds": 5.5,
-      "bytes": 89025
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 20,
+      "durationSeconds": 8.72,
+      "bytes": 140544
     },
     {
       "slug": "the-summer-palace-yuan-zhen-245",
       "file": "/audio/zh/the-summer-palace-yuan-zhen-245.mp3",
-      "characters": 24,
-      "durationSeconds": 5.89,
-      "bytes": 95294
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 7.44,
+      "bytes": 119808
     },
     {
       "slug": "a-suggestion-to-my-friend-liu-bai-juyi-246",
       "file": "/audio/zh/a-suggestion-to-my-friend-liu-bai-juyi-246.mp3",
-      "characters": 24,
-      "durationSeconds": 5.67,
-      "bytes": 91533
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 7.2,
+      "bytes": 115968
     },
     {
       "slug": "she-sings-an-old-song-zhang-hu-247",
       "file": "/audio/zh/she-sings-an-old-song-zhang-hu-247.mp3",
-      "characters": 24,
-      "durationSeconds": 5.89,
-      "bytes": 95294
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 9.44,
+      "bytes": 152064
     },
     {
       "slug": "the-leyou-tombs-li-shangyin-248",
       "file": "/audio/zh/the-leyou-tombs-li-shangyin-248.mp3",
-      "characters": 24,
-      "durationSeconds": 5.89,
-      "bytes": 95294
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 20,
+      "durationSeconds": 10.72,
+      "bytes": 172416
     },
     {
       "slug": "a-note-left-for-an-absent-ecluse-jia-dao-249",
       "file": "/audio/zh/a-note-left-for-an-absent-ecluse-jia-dao-249.mp3",
-      "characters": 24,
-      "durationSeconds": 5.83,
-      "bytes": 94458
+      "voice": "Uncle_Fu",
+      "reason": "Content and stillness mood profile",
+      "characters": 20,
+      "durationSeconds": 7.28,
+      "bytes": 117504
     },
     {
       "slug": "crossing-the-han-river-li-pin-250",
       "file": "/audio/zh/crossing-the-han-river-li-pin-250.mp3",
-      "characters": 24,
-      "durationSeconds": 5.76,
-      "bytes": 93204
+      "voice": "Vivian",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 20,
+      "durationSeconds": 9.28,
+      "bytes": 149376
     },
     {
       "slug": "a-spring-sigh-jin-changzu-251",
       "file": "/audio/zh/a-spring-sigh-jin-changzu-251.mp3",
-      "characters": 24,
-      "durationSeconds": 5.66,
-      "bytes": 91533
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 20,
+      "durationSeconds": 8.96,
+      "bytes": 144384
     },
     {
       "slug": "general-ge-shu-xibiren-252",
       "file": "/audio/zh/general-ge-shu-xibiren-252.mp3",
-      "characters": 24,
-      "durationSeconds": 5.42,
-      "bytes": 87771
+      "voice": "Serena",
+      "reason": "Content and courage mood profile",
+      "characters": 20,
+      "durationSeconds": 6.4,
+      "bytes": 103296
     },
     {
       "slug": "a-song-of-changgan-i-cui-hao-253",
       "file": "/audio/zh/a-song-of-changgan-i-cui-hao-253.mp3",
-      "characters": 24,
-      "durationSeconds": 6.04,
-      "bytes": 97802
+      "voice": "Serena",
+      "reason": "Content and joy mood profile",
+      "characters": 20,
+      "durationSeconds": 9.2,
+      "bytes": 148224
     },
     {
       "slug": "a-song-of-changgan-ii-cui-hao-254",
       "file": "/audio/zh/a-song-of-changgan-ii-cui-hao-254.mp3",
-      "characters": 24,
-      "durationSeconds": 6.2,
-      "bytes": 100310
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 20,
+      "durationSeconds": 7.04,
+      "bytes": 113664
     },
     {
       "slug": "a-sigh-from-a-staircase-of-jade-li-bai-255",
       "file": "/audio/zh/a-sigh-from-a-staircase-of-jade-li-bai-255.mp3",
-      "characters": 24,
-      "durationSeconds": 5.76,
-      "bytes": 93204
+      "voice": "Serena",
+      "reason": "Content and melancholy mood profile",
+      "characters": 20,
+      "durationSeconds": 11.52,
+      "bytes": 185088
     },
     {
       "slug": "border-songs-i-lu-lun-256",
       "file": "/audio/zh/border-songs-i-lu-lun-256.mp3",
-      "characters": 24,
-      "durationSeconds": 5.72,
-      "bytes": 92369
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 20,
+      "durationSeconds": 9.2,
+      "bytes": 148224
     },
     {
       "slug": "border-songs-ii-lu-lun-257",
       "file": "/audio/zh/border-songs-ii-lu-lun-257.mp3",
-      "characters": 24,
-      "durationSeconds": 5.88,
-      "bytes": 95294
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 20,
+      "durationSeconds": 7.04,
+      "bytes": 113664
     },
     {
       "slug": "border-songs-iii-lu-lun-258",
       "file": "/audio/zh/border-songs-iii-lu-lun-258.mp3",
-      "characters": 24,
-      "durationSeconds": 5.81,
-      "bytes": 94040
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 20,
+      "durationSeconds": 8.48,
+      "bytes": 136704
     },
     {
       "slug": "border-songs-iv-lu-lun-259",
       "file": "/audio/zh/border-songs-iv-lu-lun-259.mp3",
-      "characters": 24,
-      "durationSeconds": 6.02,
-      "bytes": 97384
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 20,
+      "durationSeconds": 8,
+      "bytes": 129024
     },
     {
       "slug": "a-song-of-the-southern-river-li-yi-260",
       "file": "/audio/zh/a-song-of-the-southern-river-li-yi-260.mp3",
-      "characters": 24,
-      "durationSeconds": 5.9,
-      "bytes": 95294
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 20,
+      "durationSeconds": 8.4,
+      "bytes": 135168
     },
     {
       "slug": "coming-home-he-zhizhang-261",
       "file": "/audio/zh/coming-home-he-zhizhang-261.mp3",
-      "characters": 32,
-      "durationSeconds": 7.95,
-      "bytes": 128313
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 11.44,
+      "bytes": 183936
     },
     {
       "slug": "peach-blossom-river-zhang-xu-262",
       "file": "/audio/zh/peach-blossom-river-zhang-xu-262.mp3",
-      "characters": 32,
-      "durationSeconds": 8.03,
-      "bytes": 129567
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 10,
+      "bytes": 160896
     },
     {
       "slug": "at-hibiscus-inn-parting-with-xin-jian-wang-changling-264",
       "file": "/audio/zh/at-hibiscus-inn-parting-with-xin-jian-wang-changling-264.mp3",
-      "characters": 32,
-      "durationSeconds": 7.53,
-      "bytes": 121626
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 28,
+      "durationSeconds": 8.32,
+      "bytes": 134016
     },
     {
       "slug": "in-her-quiet-window-wang-changling-265",
       "file": "/audio/zh/in-her-quiet-window-wang-changling-265.mp3",
-      "characters": 32,
-      "durationSeconds": 7.8,
-      "bytes": 125805
+      "voice": "Uncle_Fu",
+      "reason": "Frontier, martial, heroic, or historical imagery",
+      "characters": 28,
+      "durationSeconds": 14.8,
+      "bytes": 237696
     },
     {
       "slug": "a-song-of-the-spring-palace-wang-changling-266",
       "file": "/audio/zh/a-song-of-the-spring-palace-wang-changling-266.mp3",
-      "characters": 32,
-      "durationSeconds": 7.92,
-      "bytes": 127895
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 10.96,
+      "bytes": 176256
     },
     {
       "slug": "through-the-yangzi-gorges-li-bai-269",
       "file": "/audio/zh/through-the-yangzi-gorges-li-bai-269.mp3",
-      "characters": 32,
-      "durationSeconds": 7.64,
-      "bytes": 123297
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 28,
+      "durationSeconds": 11.44,
+      "bytes": 183936
     },
     {
       "slug": "on-meeting-a-messenger-to-the-capital-cen-can-270",
       "file": "/audio/zh/on-meeting-a-messenger-to-the-capital-cen-can-270.mp3",
-      "characters": 32,
-      "durationSeconds": 7.52,
-      "bytes": 121208
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 11.68,
+      "bytes": 187776
     },
     {
       "slug": "on-meeting-li-guinian-down-the-river-du-fu-271",
       "file": "/audio/zh/on-meeting-li-guinian-down-the-river-du-fu-271.mp3",
-      "characters": 32,
-      "durationSeconds": 8.03,
-      "bytes": 129567
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 10,
+      "bytes": 160896
     },
     {
       "slug": "at-chuzhou-on-the-western-stream-wei-yingwu-272",
       "file": "/audio/zh/at-chuzhou-on-the-western-stream-wei-yingwu-272.mp3",
-      "characters": 32,
-      "durationSeconds": 7.68,
-      "bytes": 123715
+      "voice": "Vivian",
+      "reason": "Content and stillness mood profile",
+      "characters": 28,
+      "durationSeconds": 9.84,
+      "bytes": 158208
     },
     {
       "slug": "after-the-day-of-no-fire-han-hong-274",
       "file": "/audio/zh/after-the-day-of-no-fire-han-hong-274.mp3",
-      "characters": 32,
-      "durationSeconds": 7.68,
-      "bytes": 124133
+      "voice": "Vivian",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 14,
+      "bytes": 225024
     },
     {
       "slug": "a-moonlight-night-liu-fangping-275",
       "file": "/audio/zh/a-moonlight-night-liu-fangping-275.mp3",
-      "characters": 32,
-      "durationSeconds": 7.59,
-      "bytes": 122462
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 11.2,
+      "bytes": 180096
     },
     {
       "slug": "spring-heart-break-liu-fangping-276",
       "file": "/audio/zh/spring-heart-break-liu-fangping-276.mp3",
-      "characters": 32,
-      "durationSeconds": 7.65,
-      "bytes": 123297
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 12.88,
+      "bytes": 206976
     },
     {
       "slug": "a-troopers-burden-liu-zhongyong-277",
       "file": "/audio/zh/a-troopers-burden-liu-zhongyong-277.mp3",
-      "characters": 32,
-      "durationSeconds": 8.05,
-      "bytes": 129985
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 12.72,
+      "bytes": 204288
     },
     {
       "slug": "a-palace-poem-gu-kuang-278",
       "file": "/audio/zh/a-palace-poem-gu-kuang-278.mp3",
-      "characters": 32,
-      "durationSeconds": 7.86,
-      "bytes": 127059
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 12.32,
+      "bytes": 198144
     },
     {
       "slug": "on-hearing-a-flute-at-night-from-the-wall-of-shouxiang-li-yi-279",
       "file": "/audio/zh/on-hearing-a-flute-at-night-from-the-wall-of-shouxiang-li-yi-279.mp3",
-      "characters": 32,
-      "durationSeconds": 7.73,
-      "bytes": 124551
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 13.84,
+      "bytes": 222336
     },
     {
       "slug": "blacktail-row-liu-yuxi-280",
       "file": "/audio/zh/blacktail-row-liu-yuxi-280.mp3",
-      "characters": 32,
-      "durationSeconds": 8.02,
-      "bytes": 129567
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 28,
+      "durationSeconds": 9.28,
+      "bytes": 149376
     },
     {
       "slug": "a-spring-song-liu-yuxi-281",
       "file": "/audio/zh/a-spring-song-liu-yuxi-281.mp3",
-      "characters": 32,
-      "durationSeconds": 7.99,
-      "bytes": 128731
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 12.08,
+      "bytes": 194304
     },
     {
       "slug": "a-song-of-the-palace-bai-juyi-282",
       "file": "/audio/zh/a-song-of-the-palace-bai-juyi-282.mp3",
-      "characters": 32,
-      "durationSeconds": 7.64,
-      "bytes": 123297
+      "voice": "Serena",
+      "reason": "Content and solitude mood profile",
+      "characters": 28,
+      "durationSeconds": 16.96,
+      "bytes": 272256
     },
     {
       "slug": "of-one-in-the-forbidden-city-zhang-hu-283",
       "file": "/audio/zh/of-one-in-the-forbidden-city-zhang-hu-283.mp3",
-      "characters": 32,
-      "durationSeconds": 7.56,
-      "bytes": 122044
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 28,
+      "durationSeconds": 12.08,
+      "bytes": 194304
     },
     {
       "slug": "on-the-terrace-of-assembled-angels-ii-zhang-hu-285",
       "file": "/audio/zh/on-the-terrace-of-assembled-angels-ii-zhang-hu-285.mp3",
-      "characters": 32,
-      "durationSeconds": 7.48,
-      "bytes": 120790
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 10.72,
+      "bytes": 172416
     },
     {
       "slug": "at-nanjing-ferry-zhang-hu-286",
       "file": "/audio/zh/at-nanjing-ferry-zhang-hu-286.mp3",
-      "characters": 32,
-      "durationSeconds": 7.54,
-      "bytes": 121626
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 10.8,
+      "bytes": 173568
     },
     {
       "slug": "a-song-of-the-palace-zhu-qingyu-287",
       "file": "/audio/zh/a-song-of-the-palace-zhu-qingyu-287.mp3",
-      "characters": 32,
-      "durationSeconds": 7.75,
-      "bytes": 124969
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 16.08,
+      "bytes": 258048
     },
     {
       "slug": "on-the-eve-of-government-examinations-to-secretary-zhang-zhu-qingyu-288",
       "file": "/audio/zh/on-the-eve-of-government-examinations-to-secretary-zhang-zhu-qingyu-288.mp3",
-      "characters": 32,
-      "durationSeconds": 7.69,
-      "bytes": 124133
+      "voice": "Serena",
+      "reason": "Content and stillness mood profile",
+      "characters": 28,
+      "durationSeconds": 9.2,
+      "bytes": 148224
     },
     {
       "slug": "i-climb-to-the-leyou-tombs-before-leaving-for-wuxing-du-mu-289",
       "file": "/audio/zh/i-climb-to-the-leyou-tombs-before-leaving-for-wuxing-du-mu-289.mp3",
-      "characters": 32,
-      "durationSeconds": 7.63,
-      "bytes": 123297
+      "voice": "Uncle_Fu",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 10.08,
+      "bytes": 162048
     },
     {
       "slug": "by-the-purple-cliff-du-mu-290",
       "file": "/audio/zh/by-the-purple-cliff-du-mu-290.mp3",
-      "characters": 32,
-      "durationSeconds": 7.91,
-      "bytes": 127477
+      "voice": "Serena",
+      "reason": "Content and nostalgia mood profile",
+      "characters": 28,
+      "durationSeconds": 8.8,
+      "bytes": 141696
     },
     {
       "slug": "a-mooring-on-the-qin-huai-river-du-mu-291",
       "file": "/audio/zh/a-mooring-on-the-qin-huai-river-du-mu-291.mp3",
-      "characters": 32,
-      "durationSeconds": 7.78,
-      "bytes": 125387
+      "voice": "Vivian",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 19.04,
+      "bytes": 305664
     },
     {
       "slug": "a-message-to-han-cho-the-yangzhou-magistrate-du-mu-292",
       "file": "/audio/zh/a-message-to-han-cho-the-yangzhou-magistrate-du-mu-292.mp3",
-      "characters": 32,
-      "durationSeconds": 7.77,
-      "bytes": 125387
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 10.16,
+      "bytes": 163584
     },
     {
       "slug": "a-confession-du-mu-293",
       "file": "/audio/zh/a-confession-du-mu-293.mp3",
-      "characters": 32,
-      "durationSeconds": 7.83,
-      "bytes": 126223
+      "voice": "Vivian",
+      "reason": "Content and joy mood profile",
+      "characters": 28,
+      "durationSeconds": 10.96,
+      "bytes": 176256
     },
     {
       "slug": "in-the-autumn-night-du-mu-294",
       "file": "/audio/zh/in-the-autumn-night-du-mu-294.mp3",
-      "characters": 32,
-      "durationSeconds": 8.04,
-      "bytes": 129567
+      "voice": "Serena",
+      "reason": "Content and wonder mood profile",
+      "characters": 28,
+      "durationSeconds": 8.4,
+      "bytes": 135168
     },
     {
       "slug": "parting-i-du-mu-295",
       "file": "/audio/zh/parting-i-du-mu-295.mp3",
-      "characters": 32,
-      "durationSeconds": 7.6,
-      "bytes": 122462
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 28,
+      "durationSeconds": 14.4,
+      "bytes": 231168
     },
     {
       "slug": "parting-ii-du-mu-296",
       "file": "/audio/zh/parting-ii-du-mu-296.mp3",
-      "characters": 32,
-      "durationSeconds": 7.79,
-      "bytes": 125805
+      "voice": "Serena",
+      "reason": "Content and longing mood profile",
+      "characters": 28,
+      "durationSeconds": 13.84,
+      "bytes": 222336
     },
     {
       "slug": "the-garden-of-the-golden-valley-du-mu-297",
       "file": "/audio/zh/the-garden-of-the-golden-valley-du-mu-297.mp3",
-      "characters": 32,
-      "durationSeconds": 7.79,
-      "bytes": 125805
+      "voice": "Vivian",
+      "reason": "Content and courage mood profile",
+      "characters": 28,
+      "durationSeconds": 15.04,
+      "bytes": 241536
     }
   ]
 }
