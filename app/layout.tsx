@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://moon-mood-tonight.chatgpt.site"),
+  metadataBase: new URL(
+    "https://moon-mood-tonight.zhihui2031.chatgpt.site",
+  ),
   title: {
     default: "Moon Mood Tonight",
     template: "%s · Moon Mood Tonight",
