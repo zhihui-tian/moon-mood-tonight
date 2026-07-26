@@ -317,7 +317,13 @@ img {
 
 .mood-section {
   background:
-    linear-gradient(180deg, #08090b, #0d0e12 35%, #090a0d);
+    linear-gradient(
+      180deg,
+      rgba(8, 9, 11, 0.93),
+      rgba(13, 14, 18, 0.72) 42%,
+      rgba(9, 10, 13, 0.9)
+    ),
+    url("/poems/05-autumn-evening.jpg") center 42% / cover;
 }
 
 .section-heading {
@@ -371,15 +377,15 @@ img {
   background-image: var(--mood-image);
   background-position: center;
   background-size: cover;
-  filter: saturate(0.58);
-  opacity: 0.4;
+  filter: saturate(0.78);
+  opacity: 0.62;
   transform: scale(1.03);
   transition: opacity 450ms ease, transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .mood-card::after {
   background:
-    linear-gradient(180deg, rgba(4, 5, 6, 0.08) 8%, rgba(4, 5, 6, 0.9) 100%),
+    linear-gradient(180deg, rgba(4, 5, 6, 0.03) 8%, rgba(4, 5, 6, 0.76) 100%),
     radial-gradient(circle at 74% 22%, color-mix(in srgb, var(--mood-glow) 42%, transparent), transparent 32%);
 }
 
@@ -492,6 +498,9 @@ img {
 
 .editorial-copy {
   align-self: center;
+  background:
+    linear-gradient(90deg, rgba(10, 11, 13, 0.94), rgba(10, 11, 13, 0.7)),
+    url("/poems/04-spring-river.jpg") 72% center / cover;
   padding: clamp(4rem, 8vw, 9rem);
 }
 
@@ -512,7 +521,9 @@ img {
 }
 
 .featured-section {
-  background: #0c0d10;
+  background:
+    linear-gradient(rgba(10, 11, 14, 0.82), rgba(10, 11, 14, 0.92)),
+    url("/poems/08-yellow-crane-tower.jpg") center 35% / cover;
 }
 
 .featured-poems {
@@ -583,8 +594,9 @@ img {
 .not-found {
   align-items: center;
   background:
-    radial-gradient(circle at center, rgba(57, 66, 74, 0.18), transparent 36%),
-    #07080a;
+    radial-gradient(circle at center, rgba(57, 66, 74, 0.12), transparent 36%),
+    linear-gradient(rgba(7, 8, 10, 0.58), rgba(7, 8, 10, 0.84)),
+    url("/poems/04-spring-river.jpg") center 44% / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -600,7 +612,7 @@ img {
   background: radial-gradient(circle at 36% 32%, #eeeae1, #92999e 64%, #24282b 100%);
   border-radius: 50%;
   box-shadow: 0 0 7rem rgba(221, 226, 229, 0.1);
-  opacity: 0.18;
+  opacity: 0.12;
   position: absolute;
   width: min(36vw, 26rem);
 }
@@ -776,7 +788,8 @@ img {
 .mood-collection {
   background:
     radial-gradient(circle at 90% 0, color-mix(in srgb, var(--mood-glow) 12%, transparent), transparent 26rem),
-    #0b0c0f;
+    linear-gradient(rgba(8, 9, 12, 0.78), rgba(8, 9, 12, 0.92)),
+    var(--mood-image) center / cover;
 }
 
 .mood-poem-list {
@@ -788,17 +801,37 @@ img {
   border-bottom: 1px solid var(--line);
   display: grid;
   gap: 2rem;
-  grid-template-columns: 3rem minmax(0, 1fr) minmax(8rem, 0.4fr) 4rem;
-  min-height: 8.5rem;
+  grid-template-columns:
+    3rem minmax(9rem, 0.42fr) minmax(0, 1fr)
+    minmax(8rem, 0.34fr) 4rem;
+  min-height: 10rem;
   padding: 1.2rem 0;
   text-decoration: none;
   transition: background 180ms ease, padding 180ms ease;
 }
 
 .mood-poem-list a:hover {
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(255, 255, 255, 0.065);
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.mood-poem-art {
+  height: 7rem;
+  overflow: hidden;
+}
+
+.mood-poem-art img {
+  filter: saturate(0.72);
+  height: 100%;
+  object-fit: cover;
+  transition: filter 300ms ease, transform 650ms ease;
+  width: 100%;
+}
+
+.mood-poem-list a:hover .mood-poem-art img {
+  filter: saturate(0.95);
+  transform: scale(1.045);
 }
 
 .mood-poem-list > a > span,
@@ -934,7 +967,8 @@ img {
 .reading-room {
   background:
     radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--mood-glow) 10%, transparent), transparent 22rem),
-    #0b0c0f;
+    linear-gradient(rgba(7, 8, 11, 0.74), rgba(7, 8, 11, 0.9)),
+    var(--poem-image) center / cover;
   padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 9vw, 9rem);
 }
 
@@ -1183,7 +1217,9 @@ img {
 }
 
 .poem-context {
-  background: #e8e2d7;
+  background:
+    linear-gradient(rgba(232, 226, 215, 0.86), rgba(232, 226, 215, 0.78)),
+    var(--poem-image) center / cover;
   color: #151619;
   display: grid;
   gap: 5rem;
@@ -1241,7 +1277,8 @@ img {
 .poem-moods {
   background:
     radial-gradient(circle at 84% 30%, color-mix(in srgb, var(--mood-glow) 13%, transparent), transparent 24rem),
-    #0a0b0e;
+    linear-gradient(rgba(7, 8, 11, 0.72), rgba(7, 8, 11, 0.9)),
+    var(--poem-image) center 62% / cover;
   padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 9vw, 9rem);
 }
 
@@ -1280,7 +1317,9 @@ img {
 
 .poem-actions {
   align-items: end;
-  background: #07080a;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 10, 0.7), rgba(7, 8, 10, 0.88)),
+    var(--poem-image) center 74% / cover;
   display: grid;
   gap: 4rem;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -1315,7 +1354,8 @@ img {
 .page-intro {
   background:
     radial-gradient(circle at 78% 36%, rgba(119, 132, 142, 0.14), transparent 24rem),
-    #090a0c;
+    linear-gradient(90deg, rgba(7, 8, 10, 0.86), rgba(7, 8, 10, 0.52)),
+    url("/poems/08-yellow-crane-tower.jpg") center / cover;
   min-height: 72svh;
   padding: clamp(7rem, 12vw, 12rem) clamp(1.25rem, 7vw, 7rem) 6rem;
 }
@@ -1336,7 +1376,9 @@ img {
 }
 
 .explore-controls {
-  background: #0d0e11;
+  background:
+    linear-gradient(rgba(10, 11, 14, 0.86), rgba(10, 11, 14, 0.92)),
+    url("/poems/10-jeweled-zither.jpg") center 42% / cover;
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
   padding: 2.5rem clamp(1.25rem, 5vw, 5rem);
@@ -1424,7 +1466,9 @@ img {
 
 .collection-meta {
   align-items: center;
-  background: #090a0c;
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.88), rgba(7, 8, 10, 0.88)),
+    url("/poems/03-drinking-wine.jpg") center / cover;
   display: flex;
   justify-content: space-between;
   padding: 2rem clamp(1.25rem, 5vw, 5rem);
@@ -1441,7 +1485,9 @@ img {
 }
 
 .poem-grid {
-  background: #090a0c;
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.82), rgba(7, 8, 10, 0.94)),
+    url("/poems/03-drinking-wine.jpg") center / cover;
   display: grid;
   gap: 1px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1449,6 +1495,7 @@ img {
 }
 
 .poem-tile {
+  background: rgba(8, 9, 12, 0.7);
   border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
@@ -1465,7 +1512,7 @@ img {
 }
 
 .poem-tile img {
-  filter: saturate(0.54);
+  filter: saturate(0.74);
   height: 100%;
   object-fit: cover;
   transition: filter 300ms ease, transform 650ms ease;
@@ -1528,7 +1575,9 @@ img {
 }
 
 .empty-state {
-  background: #090a0c;
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.8), rgba(7, 8, 10, 0.9)),
+    url("/poems/02-long-road.jpg") center / cover;
   padding: 7rem 1.5rem;
   text-align: center;
 }
@@ -1558,6 +1607,9 @@ img {
 }
 
 .about-manifesto {
+  background:
+    linear-gradient(90deg, rgba(7, 8, 10, 0.88), rgba(7, 8, 10, 0.66)),
+    url("/poems/04-spring-river.jpg") center / cover;
   display: grid;
   gap: 4rem;
   grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
@@ -1580,6 +1632,9 @@ img {
 }
 
 .about-numbers {
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.72), rgba(7, 8, 10, 0.82)),
+    url("/poems/07-climbing-high.jpg") center 56% / cover;
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
   display: grid;
@@ -1642,6 +1697,9 @@ img {
 
 .about-method > div:last-child {
   align-self: center;
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.82), rgba(7, 8, 10, 0.88)),
+    url("/poems/01-the-reeds.jpg") center / cover;
   padding: clamp(4rem, 7vw, 8rem);
 }
 
@@ -1679,8 +1737,10 @@ img {
 }
 
 .legacy-exhibition {
-  background: #e8e2d7;
-  color: #151619;
+  background:
+    linear-gradient(90deg, rgba(7, 8, 10, 0.76), rgba(7, 8, 10, 0.54)),
+    url("/poems/10-jeweled-zither.jpg") center 58% / cover;
+  color: var(--paper);
   display: grid;
   gap: 4rem;
   grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
@@ -1688,7 +1748,7 @@ img {
 }
 
 .legacy-exhibition .section-label {
-  color: rgba(21, 22, 25, 0.5);
+  color: var(--paper-faint);
 }
 
 .legacy-exhibition h2 {
@@ -1706,8 +1766,14 @@ img {
 }
 
 .legacy-exhibition .text-link {
-  border-color: rgba(21, 22, 25, 0.4);
+  border-color: var(--line-strong);
   margin-top: 1rem;
+}
+
+.about-moods {
+  background:
+    linear-gradient(rgba(7, 8, 10, 0.8), rgba(7, 8, 10, 0.92)),
+    url("/poems/05-autumn-evening.jpg") center / cover;
 }
 
 .not-found {
@@ -1877,11 +1943,15 @@ img {
 
   .mood-poem-list a {
     gap: 1rem;
-    grid-template-columns: 2rem minmax(0, 1fr) 3rem;
+    grid-template-columns: 2rem minmax(7rem, 0.38fr) minmax(0, 1fr) 3rem;
   }
 
   .mood-poem-list em {
     display: none;
+  }
+
+  .mood-poem-art {
+    height: 5.75rem;
   }
 
   .poem-hero h1 {
@@ -2002,6 +2072,19 @@ img {
     font-size: 2.4rem;
   }
 
+  .mood-poem-list a {
+    grid-template-columns: 1.5rem 5.5rem minmax(0, 1fr);
+    min-height: 7.5rem;
+  }
+
+  .mood-poem-list small {
+    display: none;
+  }
+
+  .mood-poem-art {
+    height: 5rem;
+  }
+
   .poem-moods > div {
     grid-template-columns: 1fr;
   }
@@ -2057,6 +2140,7 @@ img {
   .mood-card::before,
   .mood-chinese,
   .mood-arrow,
+  .mood-poem-art img,
   .featured-poems img,
   .poem-tile img,
   .begin-link span,

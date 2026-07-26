@@ -40,6 +40,7 @@ export default async function MoodPage({
   const style = {
     "--mood-accent": mood.accent,
     "--mood-glow": mood.glow,
+    "--mood-image": `url("${mood.image}")`,
   } as CSSProperties;
 
   return (
@@ -85,6 +86,9 @@ export default async function MoodPage({
                 key={poem.slug}
               >
                 <span>{String(index + 1).padStart(2, "0")}</span>
+                <div className="mood-poem-art" aria-hidden="true">
+                  <img alt="" loading="lazy" src={poem.image} />
+                </div>
                 <div>
                   <p>
                     {poem.poet} · {poem.dynasty}

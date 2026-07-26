@@ -93,6 +93,7 @@ export function PoemExperience({
   const style = {
     "--mood-accent": mood.accent,
     "--mood-glow": mood.glow,
+    "--poem-image": `url("${poem.image}")`,
   } as CSSProperties;
 
   return (
