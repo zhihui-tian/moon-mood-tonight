@@ -968,7 +968,7 @@ img {
   background:
     radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--mood-glow) 10%, transparent), transparent 22rem),
     linear-gradient(rgba(7, 8, 11, 0.74), rgba(7, 8, 11, 0.9)),
-    var(--poem-image) center / cover;
+    var(--reading-image) center / cover;
   padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 9vw, 9rem);
 }
 
@@ -1219,7 +1219,7 @@ img {
 .poem-context {
   background:
     linear-gradient(rgba(232, 226, 215, 0.86), rgba(232, 226, 215, 0.78)),
-    var(--poem-image) center / cover;
+    var(--context-image) center / cover;
   color: #151619;
   display: grid;
   gap: 5rem;
@@ -1278,7 +1278,7 @@ img {
   background:
     radial-gradient(circle at 84% 30%, color-mix(in srgb, var(--mood-glow) 13%, transparent), transparent 24rem),
     linear-gradient(rgba(7, 8, 11, 0.72), rgba(7, 8, 11, 0.9)),
-    var(--poem-image) center 62% / cover;
+    var(--moods-image) center 62% / cover;
   padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 9vw, 9rem);
 }
 
@@ -1319,7 +1319,7 @@ img {
   align-items: end;
   background:
     linear-gradient(90deg, rgba(7, 8, 10, 0.7), rgba(7, 8, 10, 0.88)),
-    var(--poem-image) center 74% / cover;
+    var(--actions-image) center 74% / cover;
   display: grid;
   gap: 4rem;
   grid-template-columns: minmax(0, 1fr) auto;

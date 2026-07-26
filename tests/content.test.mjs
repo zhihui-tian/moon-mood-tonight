@@ -37,11 +37,21 @@ test("ships exactly 300 uniquely addressed poems", async () => {
 });
 
 test("defines all eight editorial moods and stable route surfaces", async () => {
-  const [moods, home, poemPage, poemExperience, moodPage, explorePage, styles] = await Promise.all([
+  const [
+    moods,
+    home,
+    poemPage,
+    poemExperience,
+    sectionImages,
+    moodPage,
+    explorePage,
+    styles,
+  ] = await Promise.all([
     readFile(new URL("lib/moods.ts", root), "utf8"),
     readFile(new URL("app/page.tsx", root), "utf8"),
     readFile(new URL("app/poems/[slug]/page.tsx", root), "utf8"),
     readFile(new URL("components/PoemExperience.tsx", root), "utf8"),
+    readFile(new URL("lib/poem-section-images.ts", root), "utf8"),
     readFile(new URL("app/mood/[mood]/page.tsx", root), "utf8"),
     readFile(new URL("app/explore/page.tsx", root), "utf8"),
     readFile(new URL("app/globals.css", root), "utf8"),
@@ -64,11 +74,23 @@ test("defines all eight editorial moods and stable route surfaces", async () => 
   assert.match(poemPage, /generateStaticParams/);
   assert.match(moodPage, /MoodRecommendationButton/);
   assert.match(explorePage, /ExploreCollection/);
-  assert.match(poemExperience, /"--poem-image": `url/);
+  for (const image of [
+    "--reading-image",
+    "--context-image",
+    "--moods-image",
+    "--actions-image",
+  ]) {
+    assert.match(poemExperience, new RegExp(`"${image}": \\\`url`));
+  }
   assert.match(moodPage, /className="mood-poem-art"/);
   assert.match(moodPage, /"--mood-image": `url/);
-  assert.match(styles, /var\(--poem-image\) center \/ cover/);
+  assert.match(styles, /var\(--reading-image\) center \/ cover/);
+  assert.match(styles, /var\(--context-image\) center \/ cover/);
+  assert.match(styles, /var\(--moods-image\) center 62% \/ cover/);
+  assert.match(styles, /var\(--actions-image\) center 74% \/ cover/);
   assert.match(styles, /var\(--mood-image\) center \/ cover/);
+  assert.match(sectionImages, /artwork\.src === poem\.image/);
+  assert.match(sectionImages, /\.slice\(0, 4\)/);
 });
 
 test("includes every reused ink-wash landscape and six poem-specific pilots", async () => {

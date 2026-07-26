@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getMood, isMoodId, moods } from "../lib/moods";
+import { getPoemSectionImages } from "../lib/poem-section-images";
 import { choosePoemForMood, historyKey } from "../lib/random-poem";
 import type { MoodId, Poem } from "../lib/types";
 import { PoemNarration } from "./PoemNarration";
@@ -90,10 +91,14 @@ export function PoemExperience({
     }
   }
 
+  const sectionImages = getPoemSectionImages(poem);
   const style = {
     "--mood-accent": mood.accent,
     "--mood-glow": mood.glow,
-    "--poem-image": `url("${poem.image}")`,
+    "--reading-image": `url("${sectionImages.reading}")`,
+    "--context-image": `url("${sectionImages.context}")`,
+    "--moods-image": `url("${sectionImages.moods}")`,
+    "--actions-image": `url("${sectionImages.actions}")`,
   } as CSSProperties;
 
   return (
