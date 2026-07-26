@@ -1,7 +1,7 @@
-import { narrationPreviewSlugs, poems } from "../content/poems/catalog";
+import { poems } from "../content/poems/catalog";
 import type { MoodId } from "./types";
 
-export { narrationPreviewSlugs, poems };
+export { poems };
 
 export function getPoem(slug: string | undefined) {
   return poems.find((poem) => poem.slug === slug);
