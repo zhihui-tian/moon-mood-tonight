@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
@@ -81,6 +81,38 @@ test("includes every reused ink-wash landscape", async () => {
         "jeweled-zither",
       ];
       return access(new URL(`public/poems/${number}-${names[index]}.jpg`, root));
+    }),
+  );
+});
+
+test("ships one fixed Mandarin narration for every poem", async () => {
+  const [manifestSource, player, catalog] = await Promise.all([
+    readFile(new URL("public/audio/zh/manifest.json", root), "utf8"),
+    readFile(new URL("components/PoemNarration.tsx", root), "utf8"),
+    readFile(new URL("content/poems/catalog.ts", root), "utf8"),
+  ]);
+  const manifest = JSON.parse(manifestSource);
+  const slugs = manifest.poems.map((poem) => poem.slug);
+
+  assert.equal(manifest.count, 300);
+  assert.equal(slugs.length, 300);
+  assert.equal(new Set(slugs).size, 300);
+  assert.equal(manifest.voice, "Tingting");
+  assert.equal(manifest.locale, "zh_CN");
+  assert.ok(manifest.totalDurationSeconds > 5_000);
+  assert.ok(manifest.totalBytes > 80_000_000);
+  assert.match(catalog, /audio: `\/audio\/zh\/\$\{poem\.slug\}\.mp3`/);
+  assert.match(player, /<audio/);
+  assert.match(player, /const playbackRates = \[0\.8, 1, 1\.2\]/);
+  assert.match(player, /onActiveLineChange/);
+
+  await Promise.all(
+    manifest.poems.map(async (poem) => {
+      const audio = new URL(`public${poem.file}`, root);
+      const file = await stat(audio);
+      assert.ok(file.size > 4_096, `${poem.slug} narration is incomplete`);
+      assert.equal(file.size, poem.bytes, `${poem.slug} byte count drifted`);
+      assert.ok(poem.durationSeconds > 1, `${poem.slug} duration is invalid`);
     }),
   );
 });

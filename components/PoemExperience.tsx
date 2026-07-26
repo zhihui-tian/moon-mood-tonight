@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { getMood, isMoodId, moods } from "../lib/moods";
 import { choosePoemForMood, historyKey } from "../lib/random-poem";
 import type { MoodId, Poem } from "../lib/types";
+import { PoemNarration } from "./PoemNarration";
 
 type ReadingMode = "english" | "chinese" | "both";
 
@@ -30,6 +31,7 @@ export function PoemExperience({
   const router = useRouter();
   const [mode, setMode] = useState<ReadingMode>("both");
   const [shareStatus, setShareStatus] = useState("");
+  const [activeChineseLine, setActiveChineseLine] = useState<number | null>(null);
   const activeMood = isMoodId(requestedMood)
     ? requestedMood
     : strongestMood(poem);
@@ -141,6 +143,15 @@ export function PoemExperience({
           </div>
         </div>
 
+        {poem.audio ? (
+          <PoemNarration
+            audio={poem.audio}
+            lines={poem.originalChinese}
+            onActiveLineChange={setActiveChineseLine}
+            title={poem.title}
+          />
+        ) : null}
+
         <div className={`poem-reading poem-reading-${mode}`}>
           {mode !== "chinese" && (
             <article className="translation-column">
@@ -159,9 +170,24 @@ export function PoemExperience({
               <p className="language-label">中文原文</p>
               {poem.originalChinese.map((stanza, stanzaIndex) => (
                 <p className="stanza" key={`original-${stanzaIndex}`}>
-                  {stanza.map((line) => (
-                    <span key={line}>{line}</span>
-                  ))}
+                  {stanza.map((line, lineIndex) => {
+                    const flattenedIndex =
+                      poem.originalChinese
+                        .slice(0, stanzaIndex)
+                        .reduce((sum, item) => sum + item.length, 0) + lineIndex;
+                    return (
+                      <span
+                        className={
+                          activeChineseLine === flattenedIndex
+                            ? "is-reading"
+                            : undefined
+                        }
+                        key={`${line}-${lineIndex}`}
+                      >
+                        {line}
+                      </span>
+                    );
+                  })}
                 </p>
               ))}
             </article>

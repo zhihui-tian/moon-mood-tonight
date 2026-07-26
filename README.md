@@ -15,6 +15,8 @@ from a collection of 300 classical Chinese poems.
 - Chinese originals with attributed English literary renderings
 - short historical context and an explanation of each mood relationship
 - stable, shareable pages for every poem
+- fixed Mandarin narration for all 300 poems, with play, pause, restart, seeking,
+  three reading speeds, and a current-line cue
 - weighted recommendations that avoid recently viewed poems on the same device
 - collection filters for mood, poet, dynasty, theme, title, and Chinese text
 - responsive, accessible presentation with reduced-motion support
@@ -36,6 +38,8 @@ components/          interactive reading and recommendation components
 content/poems/       static, version-controlled poem content
 lib/                 moods, content access, and weighted recommendation logic
 public/poems/        unified ink-wash landscapes
+public/audio/zh/      300 fixed Mandarin MP3 narrations and their manifest
+scripts/             repeatable narration generation
 ```
 
 The content remains static and version-controlled. A database is intentionally
@@ -56,6 +60,17 @@ Create and validate a production build:
 ```bash
 pnpm test
 ```
+
+Regenerate all Mandarin narration files on macOS:
+
+```bash
+pnpm audio:generate
+```
+
+The current audio edition was synthesized locally with the macOS `Tingting`
+Mandarin system voice at a measured pace, then encoded as mono 128 kbps MP3.
+The checked-in manifest records the voice, speed, duration, and file size for
+every poem so the complete audio edition can be validated or replaced later.
 
 ## Editorial and source note
 

@@ -31,6 +31,7 @@ export type Poem = {
   license: string;
   source?: string;
   excerpt?: boolean;
+  audio?: string;
 };
 
 export type Mood = {

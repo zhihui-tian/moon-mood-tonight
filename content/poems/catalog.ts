@@ -1009,4 +1009,9 @@ const curatedPoems: Poem[] = [
   }),
 ];
 
-export const poems: Poem[] = [...curatedPoems, ...tangAnthologyPoems];
+export const poems: Poem[] = [...curatedPoems, ...tangAnthologyPoems].map(
+  (poem) => ({
+    ...poem,
+    audio: `/audio/zh/${poem.slug}.mp3`,
+  }),
+);
