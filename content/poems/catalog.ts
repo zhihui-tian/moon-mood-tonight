@@ -72,8 +72,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { longing: 1, wonder: 0.58, melancholy: 0.52 },
     themes: ["distance", "desire", "water", "searching"],
-    image: "/poems/01-the-reeds.jpg",
-    imageAlt: "A misty river marsh filled with pale reeds at dawn",
+    image: "/poems/16-the-reeds.png",
+    imageAlt:
+      "Dew-bright reeds, a winding riverbank, and a distant figure across dawn water",
     introduction:
       "One of the most haunting love poems in the Book of Songs, built from repetition, mist, and an unreachable figure across the water.",
     interpretation:
@@ -515,8 +516,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { nostalgia: 1, longing: 0.82, solitude: 0.72 },
     themes: ["moon", "home", "night", "distance"],
-    image: "/poems/04-spring-river.jpg",
-    imageAlt: "Cold moonlight entering a quiet room",
+    image: "/poems/15-quiet-night-thought.png",
+    imageAlt:
+      "A solitary Tang traveler beside a low bed as moonlight lies like frost across the floor",
     introduction:
       "Four plain lines create perhaps the best-known image of homesickness in Chinese poetry: moonlight crossing the floor of a distant room.",
     interpretation:
@@ -697,8 +699,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { joy: 0.78, stillness: 0.56, melancholy: 0.36 },
     themes: ["spring", "waking", "birds", "change"],
-    image: "/poems/03-drinking-wine.jpg",
-    imageAlt: "Spring blossoms after rain in the soft light of morning",
+    image: "/poems/13-spring-morning.png",
+    imageAlt:
+      "A rain-washed spring garden at dawn with calling birds and fallen blossoms",
     introduction:
       "The poem wakes slowly: birds reveal morning, memory reveals rain, and joy turns gently toward the fallen blossoms.",
     interpretation:
@@ -723,8 +726,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { courage: 1, nostalgia: 0.62, melancholy: 0.4 },
     themes: ["frontier", "war", "memory", "defense"],
-    image: "/poems/07-climbing-high.jpg",
-    imageAlt: "An ancient frontier pass under a cold moon",
+    image: "/poems/11-frontier-song.png",
+    imageAlt:
+      "Mounted guards approaching an ancient frontier pass beneath a cold moon",
     introduction:
       "Dynasties change, but the same moon shines over the same frontier and the same human cost of war.",
     interpretation:
@@ -801,8 +805,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { wonder: 1, joy: 0.68, courage: 0.48 },
     themes: ["waterfall", "scale", "sky", "imagination"],
-    image: "/poems/06-bring-in-the-wine.jpg",
-    imageAlt: "A luminous waterfall descending from violet mountain mist",
+    image: "/poems/14-mount-lu-waterfall.png",
+    imageAlt:
+      "Mount Lu waterfall falling through violet mist like a river from the sky",
     introduction:
       "Li Bai’s imagination does not decorate the waterfall; it finds the scale capable of meeting it—the river of stars falling from heaven.",
     interpretation:
@@ -1006,8 +1011,9 @@ const curatedPoems: Poem[] = [
     ],
     moods: { courage: 0.92, joy: 0.7, melancholy: 0.58 },
     themes: ["wine", "war", "music", "mortality"],
-    image: "/poems/06-bring-in-the-wine.jpg",
-    imageAlt: "Luminous wine cups beside riders preparing to cross a night desert",
+    image: "/poems/12-liangzhou-song.png",
+    imageAlt:
+      "A luminous wine cup, pipa player, horses, and frontier riders beneath the night sky",
     introduction:
       "Celebration and death occupy the same four lines. The feast is vivid because the riders know it may be their last.",
     interpretation:

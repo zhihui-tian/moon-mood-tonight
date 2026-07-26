@@ -64,7 +64,7 @@ test("defines all eight editorial moods and stable route surfaces", async () => 
   assert.match(explorePage, /ExploreCollection/);
 });
 
-test("includes every reused ink-wash landscape", async () => {
+test("includes every reused ink-wash landscape and six poem-specific pilots", async () => {
   await Promise.all(
     Array.from({ length: 10 }, (_, index) => {
       const number = String(index + 1).padStart(2, "0");
@@ -81,6 +81,23 @@ test("includes every reused ink-wash landscape", async () => {
         "jeweled-zither",
       ];
       return access(new URL(`public/poems/${number}-${names[index]}.jpg`, root));
+    }),
+  );
+
+  const pilotImages = [
+    "11-frontier-song.png",
+    "12-liangzhou-song.png",
+    "13-spring-morning.png",
+    "14-mount-lu-waterfall.png",
+    "15-quiet-night-thought.png",
+    "16-the-reeds.png",
+  ];
+  await Promise.all(
+    pilotImages.map(async (name) => {
+      const image = new URL(`public/poems/${name}`, root);
+      await access(image);
+      const file = await stat(image);
+      assert.ok(file.size > 1_000_000, `${name} should retain full artwork detail`);
     }),
   );
 });
