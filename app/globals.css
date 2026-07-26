@@ -1,0 +1,1859 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #08090b;
+  --ink-soft: #101217;
+  --paper: #f2eee5;
+  --paper-soft: rgba(242, 238, 229, 0.72);
+  --paper-faint: rgba(242, 238, 229, 0.46);
+  --line: rgba(242, 238, 229, 0.16);
+  --line-strong: rgba(242, 238, 229, 0.28);
+  --gold: #c9a15f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Baskerville,
+    "Times New Roman", serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ink);
+  color: var(--paper);
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background:
+    radial-gradient(circle at 80% 0, rgba(56, 66, 76, 0.1), transparent 24rem),
+    var(--ink);
+  color: var(--paper);
+  font-family: var(--serif);
+  margin: 0;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(201, 161, 95, 0.48);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 5px;
+}
+
+.site-header {
+  align-items: center;
+  background: rgba(8, 9, 11, 0.88);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  height: 4.75rem;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 clamp(1.25rem, 4vw, 4rem);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(18px);
+}
+
+.site-header-transparent {
+  background: linear-gradient(180deg, rgba(3, 4, 5, 0.72), transparent);
+  border-bottom: 0;
+  backdrop-filter: none;
+}
+
+.wordmark {
+  align-items: center;
+  display: inline-flex;
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 500;
+  gap: 0.85rem;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.wordmark-moon {
+  background: var(--paper);
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem rgba(242, 238, 229, 0.22);
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.primary-nav {
+  display: flex;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  gap: clamp(1.5rem, 3vw, 3.2rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.primary-nav a {
+  color: var(--paper-soft);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.primary-nav a:hover {
+  color: white;
+}
+
+.mobile-nav {
+  display: none;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.mobile-nav summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.mobile-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-nav nav {
+  background: rgba(8, 9, 11, 0.98);
+  border: 1px solid var(--line);
+  display: grid;
+  min-width: 17rem;
+  padding: 0.7rem;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+
+.mobile-nav nav a {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0.75rem;
+  text-decoration: none;
+}
+
+.mobile-nav nav a:last-child {
+  border-bottom: 0;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.61rem;
+  font-weight: 500;
+  letter-spacing: 0.27em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  align-items: center;
+  background:
+    radial-gradient(circle at 74% 46%, rgba(121, 135, 146, 0.12), transparent 21%),
+    radial-gradient(circle at 50% 60%, #171a1f 0, #090a0c 46%, #050506 100%);
+  display: flex;
+  min-height: 100svh;
+  overflow: hidden;
+  padding: 9rem clamp(1.5rem, 9vw, 9rem) 6rem;
+  position: relative;
+}
+
+.home-hero::before,
+.home-hero::after {
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.home-hero::before {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 72% 68%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1.5px);
+  background-size: 13px 17px, 19px 23px;
+  opacity: 0.08;
+}
+
+.home-hero::after {
+  background: linear-gradient(90deg, rgba(8, 9, 11, 0.22), transparent 52%);
+}
+
+.home-moon {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow:
+    0 0 10rem rgba(210, 222, 230, 0.12),
+    inset -4rem -2rem 7rem rgba(15, 18, 21, 0.72);
+  overflow: hidden;
+  position: absolute;
+  right: -5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(49vw, 47rem);
+}
+
+.home-moon::before {
+  background:
+    radial-gradient(circle at 32% 29%, rgba(65, 71, 76, 0.42) 0 7%, transparent 7.5%),
+    radial-gradient(circle at 63% 56%, rgba(67, 72, 77, 0.28) 0 12%, transparent 12.5%),
+    radial-gradient(circle at 41% 73%, rgba(75, 79, 84, 0.24) 0 8%, transparent 8.5%),
+    radial-gradient(circle at 39% 34%, #f3f0e9, #aeb5b9 61%, #61676b 100%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.home-moon::after {
+  background-image: url("/poems/04-spring-river.jpg");
+  background-position: 64% center;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.home-hero-copy {
+  max-width: 55rem;
+  position: relative;
+  z-index: 3;
+}
+
+.home-hero h1 {
+  font-size: clamp(4.5rem, 10.8vw, 11rem);
+  font-weight: 400;
+  letter-spacing: -0.066em;
+  line-height: 0.78;
+  margin: 2.4rem 0 3.2rem;
+  text-wrap: balance;
+}
+
+.home-hero-copy > p:not(.eyebrow) {
+  color: var(--paper-soft);
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 2.8rem;
+}
+
+.begin-link,
+.text-link {
+  align-items: center;
+  border-bottom: 1px solid var(--line-strong);
+  display: inline-flex;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  gap: 2.2rem;
+  letter-spacing: 0.18em;
+  padding-bottom: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.begin-link span,
+.text-link span {
+  transition: transform 180ms ease;
+}
+
+.begin-link:hover span {
+  transform: translateY(0.2rem);
+}
+
+.text-link:hover span {
+  transform: translateX(0.2rem);
+}
+
+.hero-side-note {
+  bottom: 2rem;
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.19em;
+  margin: 0;
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 4rem);
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.mood-section,
+.featured-section,
+.mood-collection,
+.about-moods {
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 5vw, 5rem);
+}
+
+.mood-section {
+  background:
+    linear-gradient(180deg, #08090b, #0d0e12 35%, #090a0d);
+}
+
+.section-heading {
+  align-items: end;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 0.7fr);
+  margin-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+.section-heading h2 {
+  font-size: clamp(3rem, 6.4vw, 6.3rem);
+  font-weight: 400;
+  letter-spacing: -0.052em;
+  line-height: 0.92;
+  margin: 1.1rem 0 0;
+  text-wrap: balance;
+}
+
+.section-heading > p {
+  color: var(--paper-soft);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 31rem;
+}
+
+.mood-grid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.mood-card {
+  aspect-ratio: 0.83;
+  background: var(--ink-soft);
+  min-height: 24rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.mood-card::before,
+.mood-card::after {
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.mood-card::before {
+  background-image: var(--mood-image);
+  background-position: center;
+  background-size: cover;
+  filter: saturate(0.58);
+  opacity: 0.4;
+  transform: scale(1.03);
+  transition: opacity 450ms ease, transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.mood-card::after {
+  background:
+    linear-gradient(180deg, rgba(4, 5, 6, 0.08) 8%, rgba(4, 5, 6, 0.9) 100%),
+    radial-gradient(circle at 74% 22%, color-mix(in srgb, var(--mood-glow) 42%, transparent), transparent 32%);
+}
+
+.mood-card:hover::before {
+  opacity: 0.67;
+  transform: scale(1.08);
+}
+
+.mood-card button {
+  align-items: stretch;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  padding: 1.4rem;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+}
+
+.mood-number {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+}
+
+.mood-chinese {
+  color: color-mix(in srgb, var(--mood-accent) 55%, transparent);
+  font-family: "Songti SC", "STSong", serif;
+  font-size: clamp(6.5rem, 10vw, 10rem);
+  font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  right: -0.5rem;
+  top: 20%;
+  transition: color 350ms ease, transform 500ms ease;
+}
+
+.mood-card:hover .mood-chinese {
+  color: color-mix(in srgb, var(--mood-accent) 82%, transparent);
+  transform: translateY(-0.35rem);
+}
+
+.mood-card-copy {
+  align-self: flex-end;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.mood-card-copy strong {
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.mood-card-copy em {
+  color: var(--paper-soft);
+  font-size: 0.96rem;
+  font-weight: 400;
+}
+
+.mood-arrow {
+  align-self: flex-end;
+  color: var(--mood-accent);
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  margin-left: auto;
+  transition: transform 180ms ease;
+}
+
+.mood-card:hover .mood-arrow {
+  transform: translate(0.2rem, -0.2rem);
+}
+
+.mood-grid-compact .mood-card {
+  min-height: 19rem;
+}
+
+.editorial-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  min-height: 90svh;
+}
+
+.editorial-image {
+  min-height: 48rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.editorial-image::after {
+  background:
+    linear-gradient(90deg, transparent 60%, #0a0b0d),
+    linear-gradient(0deg, rgba(6, 7, 8, 0.7), transparent 46%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.editorial-image img {
+  filter: saturate(0.68);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.editorial-copy {
+  align-self: center;
+  padding: clamp(4rem, 8vw, 9rem);
+}
+
+.editorial-copy h2 {
+  font-size: clamp(3rem, 5.5vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.052em;
+  line-height: 0.94;
+  margin: 1.8rem 0 2.8rem;
+}
+
+.editorial-copy > p:not(.section-label) {
+  color: var(--paper-soft);
+  font-size: clamp(1.08rem, 1.5vw, 1.3rem);
+  line-height: 1.8;
+  margin: 0 0 2.8rem;
+  max-width: 34rem;
+}
+
+.featured-section {
+  background: #0c0d10;
+}
+
+.featured-poems {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.featured-poems > a {
+  border: 1px solid var(--line);
+  min-height: 38rem;
+  overflow: hidden;
+  padding: 1rem 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.featured-poems > a > div {
+  height: 23rem;
+  margin-bottom: 1.4rem;
+  overflow: hidden;
+}
+
+.featured-poems img {
+  filter: saturate(0.6);
+  height: 100%;
+  object-fit: cover;
+  transition: filter 300ms ease, transform 700ms ease;
+  width: 100%;
+}
+
+.featured-poems > a:hover img {
+  filter: saturate(0.92);
+  transform: scale(1.045);
+}
+
+.featured-poems > a > span {
+  color: var(--paper-faint);
+  float: right;
+  font-family: var(--sans);
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+}
+
+.featured-poems p {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.57rem;
+  letter-spacing: 0.13em;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+.featured-poems h3 {
+  font-size: clamp(1.8rem, 3vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 0.8rem;
+}
+
+.featured-poems em {
+  color: var(--paper-soft);
+  font-size: 1.12rem;
+}
+
+.closing-invitation,
+.not-found {
+  align-items: center;
+  background:
+    radial-gradient(circle at center, rgba(57, 66, 74, 0.18), transparent 36%),
+    #07080a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 72svh;
+  overflow: hidden;
+  padding: 6rem 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.closing-orbit {
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 36% 32%, #eeeae1, #92999e 64%, #24282b 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 7rem rgba(221, 226, 229, 0.1);
+  opacity: 0.18;
+  position: absolute;
+  width: min(36vw, 26rem);
+}
+
+.closing-invitation > *,
+.not-found > * {
+  position: relative;
+}
+
+.closing-invitation h2,
+.not-found h1 {
+  font-size: clamp(3.4rem, 7vw, 7.5rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin: 1.8rem 0 2.8rem;
+}
+
+.closing-invitation > a {
+  border-bottom: 1px solid var(--line-strong);
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  padding-bottom: 0.65rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  align-items: end;
+  background: #050506;
+  border-top: 1px solid var(--line);
+  display: grid;
+  font-family: var(--sans);
+  gap: 3rem;
+  grid-template-columns: 1.3fr 0.7fr 1fr;
+  padding: 4rem clamp(1.25rem, 5vw, 5rem);
+}
+
+.site-footer p {
+  color: var(--paper-faint);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+  margin: 0.6rem 0 0;
+}
+
+.site-footer .footer-mark {
+  color: var(--paper);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.site-footer nav {
+  display: grid;
+  font-size: 0.62rem;
+  gap: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-footer nav a {
+  color: var(--paper-soft);
+  text-decoration: none;
+}
+
+.footer-license {
+  text-align: right;
+}
+
+.primary-action,
+.secondary-action {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  gap: 2rem;
+  justify-content: space-between;
+  letter-spacing: 0.16em;
+  min-height: 3.5rem;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.primary-action {
+  background: var(--paper);
+  border: 1px solid var(--paper);
+  color: var(--ink);
+  min-width: 15.5rem;
+}
+
+.secondary-action {
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  color: var(--paper);
+}
+
+.mood-hero,
+.poem-hero {
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+}
+
+.mood-hero-art,
+.poem-art,
+.mood-hero-overlay,
+.poem-hero-overlay {
+  inset: 0;
+  position: absolute;
+}
+
+.mood-hero-art img,
+.poem-art img {
+  filter: saturate(0.58);
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  width: 100%;
+}
+
+.mood-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(4, 5, 6, 0.93) 0, rgba(4, 5, 6, 0.66) 46%, rgba(4, 5, 6, 0.18) 100%),
+    radial-gradient(circle at 28% 50%, color-mix(in srgb, var(--mood-glow) 22%, transparent), transparent 34%);
+}
+
+.mood-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 8rem clamp(1.5rem, 9vw, 9rem);
+  position: relative;
+  width: min(100%, 58rem);
+  z-index: 2;
+}
+
+.mood-page-chinese {
+  color: color-mix(in srgb, var(--mood-accent) 52%, transparent);
+  font-family: "Songti SC", "STSong", serif;
+  font-size: clamp(7rem, 14vw, 14rem);
+  line-height: 0.8;
+  position: absolute;
+  right: -1rem;
+  top: 20%;
+}
+
+.mood-hero h1 {
+  font-size: clamp(5rem, 12vw, 12rem);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.8;
+  margin: 2.2rem 0 2.8rem;
+}
+
+.mood-hero-copy > p:not(.eyebrow) {
+  color: var(--paper-soft);
+  font-size: clamp(1.08rem, 1.7vw, 1.35rem);
+  line-height: 1.75;
+  margin: 0 0 2.8rem;
+  max-width: 36rem;
+}
+
+.mood-hero .primary-action {
+  align-self: flex-start;
+}
+
+.mood-collection {
+  background:
+    radial-gradient(circle at 90% 0, color-mix(in srgb, var(--mood-glow) 12%, transparent), transparent 26rem),
+    #0b0c0f;
+}
+
+.mood-poem-list {
+  border-top: 1px solid var(--line);
+}
+
+.mood-poem-list a {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 3rem minmax(0, 1fr) minmax(8rem, 0.4fr) 4rem;
+  min-height: 8.5rem;
+  padding: 1.2rem 0;
+  text-decoration: none;
+  transition: background 180ms ease, padding 180ms ease;
+}
+
+.mood-poem-list a:hover {
+  background: rgba(255, 255, 255, 0.035);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mood-poem-list > a > span,
+.mood-poem-list small,
+.mood-poem-list p {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.57rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mood-poem-list p {
+  margin: 0 0 0.55rem;
+}
+
+.mood-poem-list h3 {
+  font-size: clamp(1.5rem, 2.8vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin: 0;
+}
+
+.mood-poem-list em {
+  color: var(--paper-soft);
+  font-size: 1.1rem;
+}
+
+.mood-poem-list small {
+  color: var(--mood-accent);
+  text-align: right;
+}
+
+.poem-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(3, 4, 5, 0.94) 0, rgba(3, 4, 5, 0.66) 48%, rgba(3, 4, 5, 0.16) 100%),
+    linear-gradient(0deg, rgba(3, 4, 5, 0.74), transparent 38%);
+}
+
+.poem-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+  padding: 8rem clamp(1.5rem, 9vw, 9rem) 5rem;
+  position: relative;
+  width: min(100%, 76rem);
+  z-index: 2;
+}
+
+.poem-mood-kicker {
+  align-items: center;
+  color: var(--mood-accent);
+  display: inline-flex;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  gap: 0.8rem;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.poem-mood-kicker span {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0;
+}
+
+.poem-dynasty {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  margin: 4rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.poem-hero h1 {
+  font-size: clamp(4.2rem, 10vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.062em;
+  line-height: 0.82;
+  margin: 0;
+  max-width: 72rem;
+  text-wrap: balance;
+}
+
+.original-title {
+  color: color-mix(in srgb, var(--mood-accent) 78%, var(--paper));
+  font-family: "Songti SC", "STSong", serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  letter-spacing: 0.12em;
+  margin: 1.8rem 0 2.2rem;
+}
+
+.poem-byline {
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  font-style: italic;
+  margin: 0;
+}
+
+.poem-byline span {
+  color: var(--paper-faint);
+  font-family: "Songti SC", "STSong", serif;
+  font-style: normal;
+  margin-left: 0.7rem;
+}
+
+.scroll-to-poem {
+  align-items: center;
+  bottom: 2.5rem;
+  color: var(--paper-soft);
+  display: flex;
+  font-family: var(--sans);
+  font-size: 0.57rem;
+  gap: 1.5rem;
+  letter-spacing: 0.18em;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.reading-room {
+  background:
+    radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--mood-glow) 10%, transparent), transparent 22rem),
+    #0b0c0f;
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 9vw, 9rem);
+}
+
+.reading-toolbar {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: clamp(4rem, 8vw, 8rem);
+  padding-bottom: 1rem;
+}
+
+.reading-toolbar > p {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.reading-toolbar > div {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.reading-toolbar button {
+  background: transparent;
+  border: 0;
+  color: var(--paper-faint);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  padding: 0.65rem 0.8rem;
+  text-transform: uppercase;
+}
+
+.reading-toolbar button[aria-pressed="true"] {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.poem-reading {
+  display: grid;
+  gap: clamp(3rem, 8vw, 9rem);
+  grid-template-columns: minmax(0, 1.12fr) minmax(20rem, 0.88fr);
+  margin: 0 auto;
+  max-width: 86rem;
+}
+
+.poem-reading-english,
+.poem-reading-chinese {
+  grid-template-columns: minmax(0, 48rem);
+  justify-content: center;
+}
+
+.language-label {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.56rem !important;
+  font-style: normal !important;
+  letter-spacing: 0.18em;
+  margin-bottom: 3rem !important;
+  text-transform: uppercase;
+}
+
+.translation-column,
+.original-column {
+  min-width: 0;
+}
+
+.stanza {
+  margin: 0 0 2.2em;
+}
+
+.stanza span {
+  display: block;
+}
+
+.translation-column .stanza {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.68;
+}
+
+.original-column {
+  border-left: 1px solid var(--line);
+  padding-left: clamp(2rem, 5vw, 5rem);
+}
+
+.poem-reading-chinese .original-column {
+  border-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.original-column .stanza {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: clamp(1.35rem, 2.15vw, 1.9rem);
+  letter-spacing: 0.08em;
+  line-height: 1.9;
+}
+
+.poem-context {
+  background: #e8e2d7;
+  color: #151619;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: minmax(16rem, 0.7fr) minmax(0, 1.3fr);
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 9vw, 9rem);
+}
+
+.poem-context .section-label {
+  color: rgba(21, 22, 25, 0.5);
+}
+
+.poem-context h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+  margin: 1.4rem 0 0;
+}
+
+.context-copy {
+  padding-top: 3rem;
+}
+
+.context-copy > p {
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.75;
+  margin: 0 0 4rem;
+  max-width: 48rem;
+}
+
+.context-copy blockquote {
+  border-left: 1px solid rgba(21, 22, 25, 0.28);
+  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-style: italic;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 52rem;
+  padding-left: clamp(1.5rem, 4vw, 4rem);
+}
+
+.poem-moods {
+  background:
+    radial-gradient(circle at 84% 30%, color-mix(in srgb, var(--mood-glow) 13%, transparent), transparent 24rem),
+    #0a0b0e;
+  padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 9vw, 9rem);
+}
+
+.poem-moods > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 2.4rem;
+}
+
+.poem-moods a {
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  display: grid;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  min-height: 11rem;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.poem-moods a > span {
+  color: var(--mood-accent);
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 2.5rem;
+}
+
+.poem-moods a small {
+  align-self: end;
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.poem-actions {
+  align-items: end;
+  background: #07080a;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 9vw, 9rem);
+}
+
+.poem-actions h2 {
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.052em;
+  line-height: 0.94;
+  margin: 1.4rem 0 0;
+  max-width: 50rem;
+}
+
+.action-row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.action-row .secondary-action {
+  min-width: 15.5rem;
+}
+
+.explore-page,
+.about-page {
+  padding-top: 4.75rem;
+}
+
+.page-intro {
+  background:
+    radial-gradient(circle at 78% 36%, rgba(119, 132, 142, 0.14), transparent 24rem),
+    #090a0c;
+  min-height: 72svh;
+  padding: clamp(7rem, 12vw, 12rem) clamp(1.25rem, 7vw, 7rem) 6rem;
+}
+
+.page-intro h1 {
+  font-size: clamp(4.5rem, 10vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.062em;
+  line-height: 0.8;
+  margin: 2.2rem 0 3rem;
+}
+
+.page-intro > p:not(.eyebrow) {
+  color: var(--paper-soft);
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  line-height: 1.75;
+  max-width: 42rem;
+}
+
+.explore-controls {
+  background: #0d0e11;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  padding: 2.5rem clamp(1.25rem, 5vw, 5rem);
+}
+
+.search-field {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.search-field > span,
+.select-filters label > span {
+  color: var(--paper-faint);
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.54rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.search-field input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  color: var(--paper);
+  font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+  outline: 0;
+  padding: 0.4rem 0 0.8rem;
+  width: 100%;
+}
+
+.search-field input::placeholder {
+  color: rgba(242, 238, 229, 0.25);
+}
+
+.mood-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.mood-filters button,
+.clear-filters {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--paper-soft);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.54rem;
+  letter-spacing: 0.12em;
+  min-height: 2.4rem;
+  padding: 0 0.85rem;
+  text-transform: uppercase;
+}
+
+.mood-filters button[aria-pressed="true"] {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.select-filters {
+  align-items: end;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(3, minmax(9rem, 1fr)) auto;
+}
+
+.select-filters select {
+  appearance: none;
+  background: #111318;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--paper);
+  min-height: 2.8rem;
+  padding: 0 2.2rem 0 0.8rem;
+  width: 100%;
+}
+
+.clear-filters {
+  min-height: 2.8rem;
+}
+
+.collection-meta {
+  align-items: center;
+  background: #090a0c;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem clamp(1.25rem, 5vw, 5rem);
+}
+
+.collection-meta p,
+.collection-meta span {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.57rem;
+  letter-spacing: 0.14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.poem-grid {
+  background: #090a0c;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0 clamp(1.25rem, 5vw, 5rem) clamp(6rem, 10vw, 10rem);
+}
+
+.poem-tile {
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-height: 31rem;
+  padding: 0.75rem 0.75rem 1.2rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.poem-tile-art {
+  height: 17rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.poem-tile img {
+  filter: saturate(0.54);
+  height: 100%;
+  object-fit: cover;
+  transition: filter 300ms ease, transform 650ms ease;
+  width: 100%;
+}
+
+.poem-tile:hover img {
+  filter: saturate(0.9);
+  transform: scale(1.05);
+}
+
+.poem-tile-number {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.53rem;
+  letter-spacing: 0.14em;
+  position: absolute;
+  right: 1rem;
+  top: 18.4rem;
+}
+
+.poem-tile-copy {
+  padding: 0.3rem 0.4rem;
+}
+
+.poem-tile-copy p {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.52rem;
+  letter-spacing: 0.11em;
+  margin: 0 0 0.7rem;
+  padding-right: 2.5rem;
+  text-transform: uppercase;
+}
+
+.poem-tile h2 {
+  font-size: clamp(1.55rem, 2.5vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0 0 0.6rem;
+}
+
+.poem-tile-copy > span {
+  color: var(--paper-soft);
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 1rem;
+}
+
+.poem-tile > small {
+  align-self: flex-start;
+  border-top: 1px solid var(--line);
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.5rem;
+  letter-spacing: 0.13em;
+  margin: auto 0.4rem 0;
+  padding-top: 0.7rem;
+  text-transform: uppercase;
+}
+
+.empty-state {
+  background: #090a0c;
+  padding: 7rem 1.5rem;
+  text-align: center;
+}
+
+.empty-state p {
+  font-size: 1.5rem;
+}
+
+.empty-state button {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--paper);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  padding: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.about-intro {
+  background:
+    linear-gradient(90deg, rgba(5, 6, 7, 0.94), rgba(5, 6, 7, 0.46)),
+    url("/poems/10-jeweled-zither.jpg") center / cover;
+  min-height: 88svh;
+}
+
+.about-manifesto {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 7vw, 7rem);
+}
+
+.about-manifesto h2 {
+  font-size: clamp(3rem, 6.8vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin: 0 0 3rem;
+}
+
+.about-manifesto > div > p {
+  color: var(--paper-soft);
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  line-height: 1.8;
+  max-width: 44rem;
+}
+
+.about-numbers {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 clamp(1.25rem, 7vw, 7rem);
+}
+
+.about-numbers > div {
+  border-right: 1px solid var(--line);
+  display: grid;
+  min-height: 16rem;
+  padding: 2rem;
+}
+
+.about-numbers > div:last-child {
+  border-right: 0;
+}
+
+.about-numbers strong {
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.8;
+}
+
+.about-numbers span {
+  align-self: end;
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-method {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  min-height: 90svh;
+}
+
+.about-method-art {
+  min-height: 48rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-method-art::after {
+  background: linear-gradient(90deg, transparent 62%, #090a0c);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.about-method-art img {
+  filter: saturate(0.56);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-method > div:last-child {
+  align-self: center;
+  padding: clamp(4rem, 7vw, 8rem);
+}
+
+.about-method ol {
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+}
+
+.about-method li {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2.5rem 1fr;
+  padding: 1.5rem 0;
+}
+
+.about-method li > span {
+  color: var(--paper-faint);
+  font-family: var(--sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.14em;
+}
+
+.about-method h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.about-method li p {
+  color: var(--paper-soft);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.legacy-exhibition {
+  background: #e8e2d7;
+  color: #151619;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
+  padding: clamp(6rem, 10vw, 10rem) clamp(1.25rem, 7vw, 7rem);
+}
+
+.legacy-exhibition .section-label {
+  color: rgba(21, 22, 25, 0.5);
+}
+
+.legacy-exhibition h2 {
+  font-size: clamp(3rem, 6.5vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+  margin: 0 0 2rem;
+}
+
+.legacy-exhibition p {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  max-width: 42rem;
+}
+
+.legacy-exhibition .text-link {
+  border-color: rgba(21, 22, 25, 0.4);
+  margin-top: 1rem;
+}
+
+.not-found {
+  min-height: 100svh;
+}
+
+.not-found > p:not(.eyebrow) {
+  color: var(--paper-soft);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .mood-grid,
+  .poem-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mood-card {
+    aspect-ratio: 1.12;
+    min-height: 23rem;
+  }
+
+  .mood-chinese {
+    font-size: 9rem;
+  }
+
+  .featured-poems > a {
+    min-height: 33rem;
+  }
+
+  .featured-poems > a > div {
+    height: 19rem;
+  }
+
+  .poem-actions {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .action-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .poem-moods > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    height: 4rem;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .home-hero {
+    align-items: flex-end;
+    padding: 7rem 1.25rem 5rem;
+  }
+
+  .home-moon {
+    right: -33vw;
+    top: 26%;
+    width: 96vw;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(4rem, 20vw, 7rem);
+  }
+
+  .hero-side-note {
+    display: none;
+  }
+
+  .section-heading {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+
+  .mood-section,
+  .featured-section,
+  .mood-collection,
+  .about-moods {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mood-card {
+    aspect-ratio: 0.92;
+    min-height: 20rem;
+  }
+
+  .mood-chinese {
+    font-size: 6rem;
+    top: 25%;
+  }
+
+  .editorial-section,
+  .about-method {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-image,
+  .about-method-art {
+    min-height: 68svh;
+  }
+
+  .editorial-image::after,
+  .about-method-art::after {
+    background: linear-gradient(0deg, #0a0b0d, transparent 45%);
+  }
+
+  .editorial-copy {
+    padding: 2rem 1.25rem 6rem;
+  }
+
+  .featured-poems {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-poems > a {
+    min-height: 36rem;
+  }
+
+  .site-footer {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-license {
+    text-align: left;
+  }
+
+  .mood-hero-overlay,
+  .poem-hero-overlay {
+    background:
+      linear-gradient(0deg, rgba(3, 4, 5, 0.96) 0, rgba(3, 4, 5, 0.58) 64%, rgba(3, 4, 5, 0.34)),
+      radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--mood-glow) 18%, transparent), transparent 40%);
+  }
+
+  .mood-hero-copy,
+  .poem-hero-content {
+    justify-content: flex-end;
+    padding: 7rem 1.25rem 4.5rem;
+  }
+
+  .mood-hero h1 {
+    font-size: clamp(4.4rem, 21vw, 8rem);
+  }
+
+  .mood-page-chinese {
+    right: 1rem;
+    top: 18%;
+  }
+
+  .mood-poem-list a {
+    gap: 1rem;
+    grid-template-columns: 2rem minmax(0, 1fr) 3rem;
+  }
+
+  .mood-poem-list em {
+    display: none;
+  }
+
+  .poem-hero h1 {
+    font-size: clamp(3.6rem, 16vw, 6.5rem);
+  }
+
+  .poem-dynasty {
+    margin-top: 2.5rem;
+  }
+
+  .scroll-to-poem {
+    bottom: 1.5rem;
+  }
+
+  .reading-room {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .reading-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .poem-reading {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .original-column {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 4rem;
+  }
+
+  .poem-context,
+  .about-manifesto,
+  .legacy-exhibition {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .context-copy {
+    padding-top: 0;
+  }
+
+  .poem-actions {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .action-row {
+    flex-direction: column;
+  }
+
+  .page-intro {
+    min-height: 78svh;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .page-intro h1 {
+    font-size: clamp(4rem, 17vw, 7rem);
+  }
+
+  .select-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .about-numbers {
+    grid-template-columns: 1fr;
+  }
+
+  .about-numbers > div {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    min-height: 12rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .wordmark {
+    font-size: 0.56rem;
+  }
+
+  .mood-grid,
+  .poem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-card {
+    aspect-ratio: 1.25;
+  }
+
+  .mood-card-copy strong {
+    font-size: 2.4rem;
+  }
+
+  .poem-moods > div {
+    grid-template-columns: 1fr;
+  }
+
+  .reading-toolbar button {
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+  .poem-tile {
+    min-height: 34rem;
+  }
+
+  .poem-tile-art {
+    height: 21rem;
+  }
+
+  .poem-tile-number {
+    top: 22.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .mood-card::before,
+  .mood-chinese,
+  .mood-arrow,
+  .featured-poems img,
+  .poem-tile img,
+  .begin-link span,
+  .text-link span {
+    transition: none;
+  }
+}
