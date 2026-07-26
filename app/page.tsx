@@ -9,7 +9,7 @@ import { poems } from "../lib/poems";
 export const metadata: Metadata = {
   title: "Classical Chinese poetry for the way you feel tonight",
   description:
-    "Choose from eight states of mind and receive a classical Chinese poem, presented in Chinese and a new English rendering.",
+    "Choose from eight states of mind and receive one of 300 classical Chinese poems in a bilingual reading.",
 };
 
 const featuredSlugs = [
@@ -109,7 +109,7 @@ export default function Home() {
                   {poem.poet} · {poem.dynasty}
                 </p>
                 <h3>{poem.title}</h3>
-                <em lang="zh-Hans">{poem.originalTitle}</em>
+                <em lang="zh">{poem.originalTitle}</em>
               </Link>
             ))}
           </div>

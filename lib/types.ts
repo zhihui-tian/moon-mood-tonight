@@ -29,6 +29,7 @@ export type Poem = {
   interpretation: string;
   translator: string;
   license: string;
+  source?: string;
   excerpt?: boolean;
 };
 

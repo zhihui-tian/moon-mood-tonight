@@ -4,17 +4,36 @@ import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 
-test("ships a substantial, uniquely addressed poem collection", async () => {
-  const catalog = await readFile(new URL("content/poems/catalog.ts", root), "utf8");
-  const slugs = [...catalog.matchAll(/^\s+slug: "([^"]+)"/gm)].map(
+test("ships exactly 300 uniquely addressed poems", async () => {
+  const [catalog, anthology] = await Promise.all([
+    readFile(new URL("content/poems/catalog.ts", root), "utf8"),
+    readFile(new URL("content/poems/tang-anthology.ts", root), "utf8"),
+  ]);
+  const slugs = [...`${catalog}\n${anthology}`.matchAll(/^\s+"?slug"?: "([^"]+)"/gm)].map(
     (match) => match[1],
   );
+  const anthologyPoems = JSON.parse(
+    anthology.slice(anthology.indexOf("= [") + 2, anthology.lastIndexOf("]") + 1),
+  );
 
-  assert.ok(slugs.length >= 24, `expected at least 24 poems, found ${slugs.length}`);
+  assert.equal(slugs.length, 300, `expected 300 poems, found ${slugs.length}`);
   assert.equal(new Set(slugs).size, slugs.length, "poem slugs must be unique");
-  assert.match(catalog, /originalChinese:/);
-  assert.match(catalog, /translation:/);
-  assert.match(catalog, /interpretation:/);
+  assert.equal(anthologyPoems.length, 272);
+  for (const poem of anthologyPoems) {
+    assert.ok(poem.originalChinese.flat().length >= 2, `${poem.slug} needs Chinese text`);
+    assert.ok(poem.translation.flat().length >= 2, `${poem.slug} needs English text`);
+    assert.ok(Object.keys(poem.moods).length >= 2, `${poem.slug} needs overlapping moods`);
+    assert.ok(poem.themes.length >= 2, `${poem.slug} needs themes`);
+    assert.ok(poem.source.startsWith("https://"), `${poem.slug} needs source attribution`);
+  }
+  assert.match(anthology, /"originalChinese":/);
+  assert.match(anthology, /"translation":/);
+  assert.match(anthology, /"interpretation":/);
+  assert.doesNotMatch(
+    anthology,
+    /"slug": "[^"]+-(001|003|039|040|042|083|084|190|191|193)"/,
+    "later copyrighted translation exceptions must remain excluded",
+  );
 });
 
 test("defines all eight editorial moods and stable route surfaces", async () => {

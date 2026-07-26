@@ -25,7 +25,7 @@ export default function AboutPage() {
             chosen by feeling.
           </h1>
           <p>
-            Moon Mood Tonight is a growing, bilingual digital exhibition of
+            Moon Mood Tonight is a 300-poem bilingual digital exhibition of
             classical Chinese poetry—an invitation to begin with the inner
             weather you already carry.
           </p>
@@ -44,8 +44,9 @@ export default function AboutPage() {
             <p>
               A poem can belong to Stillness and Wonder, or Longing and
               Nostalgia, at the same time. Each work is therefore assigned a
-              carefully edited set of weighted moods rather than one fixed
-              category.
+              set of overlapping, weighted moods rather than one fixed
+              category. The expanded anthology uses transparent thematic rules
+              that can be refined as the collection grows.
             </p>
           </div>
         </section>
@@ -85,10 +86,10 @@ export default function AboutPage() {
               <li>
                 <span>02</span>
                 <div>
-                  <h3>Make a new English rendering</h3>
+                  <h3>Present an English rendering</h3>
                   <p>
-                    Translate for literary clarity without copying a published
-                    translation or pretending that one English version is final.
+                    Pair the Chinese text with either a new Moon Mood Tonight
+                    rendering or a clearly attributed public-domain translation.
                   </p>
                 </div>
               </li>
@@ -97,8 +98,9 @@ export default function AboutPage() {
                 <div>
                   <h3>Curate emotional resonance</h3>
                   <p>
-                    Assign several mood weights by editorial judgment, then
-                    explain why the poem belongs there.
+                    Assign several mood weights through close reading or
+                    transparent thematic rules, then explain the strongest
+                    relationship.
                   </p>
                 </div>
               </li>

@@ -1,4 +1,5 @@
 import type { Poem } from "../../lib/types";
+import { tangAnthologyPoems } from "./tang-anthology";
 
 const definePoem = (
   poem: Omit<Poem, "translator" | "license">,
@@ -8,7 +9,7 @@ const definePoem = (
   license: "CC BY 4.0",
 });
 
-export const poems: Poem[] = [
+const curatedPoems: Poem[] = [
   definePoem({
     slug: "the-reeds",
     title: "The Reeds",
@@ -1007,3 +1008,5 @@ export const poems: Poem[] = [
       "Courage does not erase fear or mortality; it raises a shining cup in their presence.",
   }),
 ];
+
+export const poems: Poem[] = [...curatedPoems, ...tangAnthologyPoems];

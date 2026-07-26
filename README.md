@@ -4,14 +4,15 @@ Classical Chinese poetry for the way you feel tonight.
 
 Moon Mood Tonight is a bilingual digital exhibition that begins with a feeling.
 Choose one of eight moods and receive a weighted, non-repeating recommendation
-from a growing collection of classical Chinese poems.
+from a collection of 300 classical Chinese poems.
 
 ## What is included
 
-- 28 curated poems spanning the *Book of Songs*, Han, Jin, Tang, and Song
+- 300 poems: 28 original curated entries plus 272 works from the classic
+  *Three Hundred Tang Poems* anthology
 - eight overlapping moods: Stillness, Longing, Solitude, Melancholy, Joy,
   Courage, Nostalgia, and Wonder
-- Chinese originals and new English literary renderings
+- Chinese originals with attributed English literary renderings
 - short historical context and an explanation of each mood relationship
 - stable, shareable pages for every poem
 - weighted recommendations that avoid recently viewed poems on the same device
@@ -56,19 +57,30 @@ Create and validate a production build:
 pnpm test
 ```
 
-## Editorial note
+## Editorial and source note
 
-Mood assignments and weights are editorial judgments, not automated sentiment
-labels. Long poems may be presented as clearly marked curated passages.
+The first 28 mood assignments are individually curated. The Tang anthology
+expansion uses transparent thematic rules to create overlapping mood weights;
+these are editorial discovery aids rather than definitive literary labels.
+Long poems may be presented as clearly marked curated passages.
 
-The English versions are new literary renderings made for this edition. They
-are not copied from published translations.
+The first 28 English versions are new literary renderings made for this
+edition. The 272-poem Tang expansion uses Witter Bynner translations from the
+1929 edition of *The Jade Mountain*, transcribed in the University of Virginia
+Chinese Text Initiative's digital edition of *Three Hundred Tang Poems*.
+Translations that the source identifies as coming from later copyrighted
+editions are deliberately excluded.
+
+Source collection:
+https://cti.lib.virginia.edu/tangeng.html
 
 ## Licenses
 
 - Software: [MIT License](LICENSE)
-- English translations and visual interpretations:
+- Original Moon Mood Tonight translations and visual interpretations:
   [Creative Commons Attribution 4.0 International](CONTENT-LICENSE.md)
+- Witter Bynner translations first published in 1929: public domain in the
+  United States
 - Classical Chinese source poems: public domain
 
 The ten original ink-wash landscapes are reused from *Ten Poems Under One Moon*

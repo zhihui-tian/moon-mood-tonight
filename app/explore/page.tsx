@@ -24,7 +24,7 @@ export default function ExplorePage() {
           </h1>
           <p>
             Browse {poems.length} works by feeling, poet, dynasty, or theme.
-            Every page holds the Chinese original beside a new English
+            Every page holds the Chinese original beside an attributed English
             rendering.
           </p>
         </header>

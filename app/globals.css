@@ -1070,6 +1070,20 @@ img {
   padding-left: clamp(1.5rem, 4vw, 4rem);
 }
 
+.poem-credit {
+  color: rgba(21, 22, 25, 0.58);
+  font-family: var(--sans);
+  font-size: 0.72rem !important;
+  letter-spacing: 0.04em;
+  margin-top: 2.5rem !important;
+}
+
+.poem-credit a {
+  color: inherit;
+  text-decoration-color: rgba(21, 22, 25, 0.35);
+  text-underline-offset: 0.28em;
+}
+
 .poem-moods {
   background:
     radial-gradient(circle at 84% 30%, color-mix(in srgb, var(--mood-glow) 13%, transparent), transparent 24rem),

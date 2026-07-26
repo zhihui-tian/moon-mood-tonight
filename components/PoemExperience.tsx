@@ -155,7 +155,7 @@ export function PoemExperience({
             </article>
           )}
           {mode !== "english" && (
-            <article className="original-column" lang="zh-Hans">
+            <article className="original-column" lang="zh">
               <p className="language-label">中文原文</p>
               {poem.originalChinese.map((stanza, stanzaIndex) => (
                 <p className="stanza" key={`original-${stanzaIndex}`}>
@@ -177,6 +177,17 @@ export function PoemExperience({
         <div className="context-copy">
           <p>{poem.introduction}</p>
           <blockquote>{poem.interpretation}</blockquote>
+          <p className="poem-credit">
+            English: {poem.translator} · {poem.license}
+            {poem.source ? (
+              <>
+                {" · "}
+                <a href={poem.source} rel="noreferrer" target="_blank">
+                  Source collection
+                </a>
+              </>
+            ) : null}
+          </p>
         </div>
       </section>
 
