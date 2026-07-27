@@ -17,6 +17,8 @@ from a collection of 300 classical Chinese poems.
 - stable, shareable pages for every poem
 - fixed Mandarin narration for all 300 poems, with play, pause, restart, seeking,
   three reading speeds, and a current-line cue
+- complete five-screen visual sequences for six pilot poems, using 30 distinct
+  poem-specific artworks in total
 - weighted recommendations that avoid recently viewed poems on the same device
 - collection filters for mood, poet, dynasty, theme, title, and Chinese text
 - responsive, accessible presentation with reduced-motion support
@@ -37,7 +39,7 @@ app/
 components/          interactive reading and recommendation components
 content/poems/       static, version-controlled poem content
 lib/                 moods, content access, and weighted recommendation logic
-public/poems/        unified ink-wash landscapes
+public/poems/        ink-wash landscapes and poem-specific screen sequences
 public/audio/zh/      300 fixed Mandarin MP3 narrations and their manifest
 scripts/             repeatable narration generation
 ```

@@ -27,6 +27,45 @@ export type PoemSectionImages = {
   actions: string;
 };
 
+const pilotSectionImages: Record<string, PoemSectionImages> = {
+  "frontier-song": {
+    reading: "/poems/frontier-song/02-reading.png",
+    context: "/poems/frontier-song/03-context.png",
+    moods: "/poems/frontier-song/04-moods.png",
+    actions: "/poems/frontier-song/05-actions.png",
+  },
+  "liangzhou-song": {
+    reading: "/poems/liangzhou-song/02-reading.png",
+    context: "/poems/liangzhou-song/03-context.png",
+    moods: "/poems/liangzhou-song/04-moods.png",
+    actions: "/poems/liangzhou-song/05-actions.png",
+  },
+  "spring-morning": {
+    reading: "/poems/spring-morning/02-reading.png",
+    context: "/poems/spring-morning/03-context.png",
+    moods: "/poems/spring-morning/04-moods.png",
+    actions: "/poems/spring-morning/05-actions.png",
+  },
+  "mount-lu-waterfall": {
+    reading: "/poems/mount-lu-waterfall/02-reading.png",
+    context: "/poems/mount-lu-waterfall/03-context.png",
+    moods: "/poems/mount-lu-waterfall/04-moods.png",
+    actions: "/poems/mount-lu-waterfall/05-actions.png",
+  },
+  "quiet-night-thought": {
+    reading: "/poems/quiet-night-thought/02-reading.png",
+    context: "/poems/quiet-night-thought/03-context.png",
+    moods: "/poems/quiet-night-thought/04-moods.png",
+    actions: "/poems/quiet-night-thought/05-actions.png",
+  },
+  "the-reeds": {
+    reading: "/poems/the-reeds/02-reading.png",
+    context: "/poems/the-reeds/03-context.png",
+    moods: "/poems/the-reeds/04-moods.png",
+    actions: "/poems/the-reeds/05-actions.png",
+  },
+};
+
 const visualLibrary: VisualArtwork[] = [
   {
     src: "/poems/01-the-reeds.jpg",
@@ -494,6 +533,9 @@ function artworkScore(
 }
 
 export function getPoemSectionImages(poem: Poem): PoemSectionImages {
+  const pilotImages = pilotSectionImages[poem.slug];
+  if (pilotImages) return pilotImages;
+
   const searchable = poemSearchableText(poem);
   const subjects = poemFamilies(searchable);
   const selected = visualLibrary

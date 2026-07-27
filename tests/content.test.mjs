@@ -89,11 +89,13 @@ test("defines all eight editorial moods and stable route surfaces", async () => 
   assert.match(styles, /var\(--moods-image\) center 62% \/ cover/);
   assert.match(styles, /var\(--actions-image\) center 74% \/ cover/);
   assert.match(styles, /var\(--mood-image\) center \/ cover/);
+  assert.match(sectionImages, /const pilotSectionImages:/);
+  assert.match(sectionImages, /pilotSectionImages\[poem\.slug\]/);
   assert.match(sectionImages, /artwork\.src === poem\.image/);
   assert.match(sectionImages, /\.slice\(0, 4\)/);
 });
 
-test("includes every reused ink-wash landscape and six poem-specific pilots", async () => {
+test("includes every reused landscape and six complete five-screen pilots", async () => {
   await Promise.all(
     Array.from({ length: 10 }, (_, index) => {
       const number = String(index + 1).padStart(2, "0");
@@ -128,6 +130,31 @@ test("includes every reused ink-wash landscape and six poem-specific pilots", as
       const file = await stat(image);
       assert.ok(file.size > 1_000_000, `${name} should retain full artwork detail`);
     }),
+  );
+
+  const pilotSlugs = [
+    "frontier-song",
+    "liangzhou-song",
+    "spring-morning",
+    "mount-lu-waterfall",
+    "quiet-night-thought",
+    "the-reeds",
+  ];
+  await Promise.all(
+    pilotSlugs.flatMap((slug) =>
+      ["02-reading", "03-context", "04-moods", "05-actions"].map(
+        async (screen) => {
+          const name = `${slug}/${screen}.png`;
+          const image = new URL(`public/poems/${name}`, root);
+          await access(image);
+          const file = await stat(image);
+          assert.ok(
+            file.size > 1_000_000,
+            `${name} should retain full artwork detail`,
+          );
+        },
+      ),
+    ),
   );
 });
 
